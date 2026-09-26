@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import '@fontsource/anton/latin-400.css';
+import '@fontsource/bitter/latin-400.css';
+import '@fontsource/bitter/latin-700.css';
 import './styles/theme.css';
 import './styles/app.css';
 ReactDOM.createRoot(document.getElementById('root')!).render(<React.StrictMode><App/></React.StrictMode>);

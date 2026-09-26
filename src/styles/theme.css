@@ -1,12 +1,14 @@
 :root {
   color-scheme: dark;
-  --bg: #151617; --surface: #1c1e20; --surface-raised: #252729;
-  --text: #eeeae2; --text-muted: #a5a5a1; --text-faint: #858681;
-  --border: #343638; --border-strong: #4e5050;
-  --accent: #b94b42; --danger: #ef8276;
+  /* MFM dark-theme tokens and slate register bands. */
+  --bg: #0a0a0a; --surface: #171717; --surface-raised: #262626;
+  --surface-heading: #1d293d; --surface-label: #45556c;
+  --text: #fafafa; --text-muted: #a1a1a1; --text-faint: #949494;
+  --border: #ffffff1a; --border-strong: #ffffff26;
+  --accent: #8b1b1b; --accent-bright: #ff6568; --danger: #ff6568;
   --spacing-xs: 4px; --spacing-sm: 8px; --spacing-md: 16px;
   --spacing-lg: 24px; --spacing-xl: 40px;
-  --font-ui: 'Arial', 'Helvetica Neue', sans-serif;
-  --font-display: 'Impact', 'Arial Narrow', 'Helvetica Neue', sans-serif;
-  --font-numeric: 'Arial', sans-serif;
+  --font-ui: 'Bitter', Georgia, serif;
+  --font-display: 'Anton', 'Arial Narrow', sans-serif;
+  --font-numeric: 'Bitter', Georgia, serif;
 }

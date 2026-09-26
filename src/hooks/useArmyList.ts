@@ -9,6 +9,13 @@ export function useArmyList() {
     add: (unitId: string, optionId: string, bucket: BucketId) => setArmy(previous => ({
       ...previous, entries: [...previous.entries, { instanceId: crypto.randomUUID(), unitId, optionId, bucket }],
     })),
+    duplicate: (id: string) => setArmy(previous => {
+      const index = previous.entries.findIndex(entry => entry.instanceId === id);
+      if (index < 0) return previous;
+      const entries = [...previous.entries];
+      entries.splice(index + 1, 0, { ...entries[index], instanceId: crypto.randomUUID() });
+      return { ...previous, entries };
+    }),
     remove: (id: string) => setArmy(previous => ({ ...previous, entries: previous.entries.filter(entry => entry.instanceId !== id) })),
     move: (id: string, bucket: BucketId) => setArmy(previous => ({ ...previous, entries: previous.entries.map(entry => entry.instanceId === id ? { ...entry, bucket } : entry) })),
     clear: () => setArmy(emptyArmy(munitorum.id)),

@@ -72,8 +72,10 @@ unit, then add each paid upgrade as a separate entry. The Outrider `+ 1 Invader 
 option is likewise an additional cost, not a complete squad. The app performs no
 wargear validation.
 
-The army starts empty, the target is fixed at 2,000, and fonts use local system
-fallbacks. Browser storage is local to the current origin/browser profile.
+The army starts empty and the target is fixed at 2,000. Anton headings and Bitter
+body text match the MFM font families, bundled locally through Fontsource under
+their open font licenses. Dark colors follow the MFM neutral palette and slate
+header bands. Browser storage is local to the current origin/browser profile.
 
 ## Verification
 
