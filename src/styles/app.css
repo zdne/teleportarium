@@ -59,27 +59,27 @@ h2 { font: 24px/1.2 var(--font-display); text-transform: uppercase; letter-spaci
 .bucket-empty { padding: 0 4px 4px; }
 .bucket-empty p { font-size: 12px; color: var(--text-muted); }
 .bucket-empty small { font-size: 11px; color: var(--text-faint); padding-top: 4px; }
-.unit-list { list-style: none; padding: 0 4px; margin: 0; display: grid; gap: 16px; }
+.unit-list { list-style: none; padding: 0 4px; margin: 0; display: grid; gap: 8px; }
 .unit-row { min-width: 0; }
-.unit-title-bar { display: flex; align-items: center; gap: 12px; background: var(--surface-heading); padding: 5px 8px; }
-.unit-name { flex: 1; min-width: 0; overflow-wrap: anywhere; font-size: 20px; line-height: 28px; font-weight: 700; }
+.unit-title-bar { display: flex; align-items: center; gap: 8px; background: var(--surface-heading); padding: 2px 4px; }
+.unit-name { flex: 1; min-width: 0; overflow-wrap: anywhere; font-size: 16px; line-height: 24px; font-weight: 700; }
 .unit-actions { display: flex; align-items: center; gap: 4px; }
 .duplicate-button { display: grid; place-items: center; flex-shrink: 0; width: 28px; height: 32px; padding: 0; border: 0; background: transparent; color: var(--text-muted); }
 .duplicate-button:hover { color: var(--text); background: var(--surface-raised); }
-.unit-cost-line { display: flex; align-items: baseline; gap: 8px; padding: 8px; font-size: 16px; line-height: 24px; }
+.unit-cost-line { display: flex; align-items: baseline; gap: 8px; padding: 2px 4px; font-size: 14px; line-height: 20px; }
 .unit-cost-line .unavailable { color: var(--danger); }
 .unit-leader { flex: 1; min-width: 12px; border-bottom: 1px dotted var(--text-muted); }
-.unit-points { font-size: 16px; font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
+.unit-points { font-size: 14px; font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
 .unit-upgrades { margin: 0 8px 4px 32px; }
-.upgrade-row { display: grid; grid-template-columns: minmax(0, 1fr) 120px 40px 28px; align-items: center; gap: 12px; background: var(--surface-label); color: var(--text); padding: 5px 8px; margin-top: 4px; font-size: 14px; }
+.upgrade-row { display: grid; grid-template-columns: minmax(0, 1fr) 120px 40px 24px; align-items: center; gap: 12px; background: var(--surface-label); color: var(--text); padding: 2px 4px; margin-top: 4px; font-size: 14px; }
 .upgrade-name { min-width: 0; }
 .upgrade-quantity { display: flex; align-items: center; gap: 8px; font-size: 12px; }
-.upgrade-quantity input { width: 52px; background: var(--surface-heading); border: 1px solid var(--border-strong); color: var(--text); padding: 4px; }
+.upgrade-quantity input { width: 52px; background: var(--surface-heading); border: 1px solid var(--border-strong); color: var(--text); padding: 1px 4px; }
 .upgrade-points { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .upgrade-row .remove-button { color: var(--text); }
-.add-wargear-button { margin-top: 8px; }
+.add-button.add-wargear-button { margin-top: 4px; }
 .wargear-picker { border: 1px solid var(--border); border-top: 0; background: var(--surface); }
-.wargear-picker button { padding: 12px; }
+.wargear-picker button { padding: 6px 8px; }
 .wargear-picker li:last-child button { border-bottom: 0; }
 .legacy-upgrade-note { font-size: 12px; color: var(--danger); padding: 0 8px 8px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
@@ -87,7 +87,8 @@ h2 { font: 24px/1.2 var(--font-display); text-transform: uppercase; letter-spaci
 .move-select option { color: var(--text); background: var(--surface); }
 .remove-button { border: 0; background: transparent; color: var(--text-faint); font-size: 20px; padding: 2px; width: 28px; height: 32px; }
 .remove-button:hover { color: var(--danger); background: var(--surface-raised); }
-.add-button { width: 100%; display: flex; gap: 10px; align-items: center; padding: 12px 8px; margin-top: 12px; border: 1px solid var(--border); background: var(--surface); font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); text-align: left; }
+.unit-actions > button, .unit-actions > select, .upgrade-row .remove-button { width: 24px; height: 24px; }
+.add-button { width: 100%; display: flex; gap: 8px; align-items: center; padding: 6px 8px; margin-top: 8px; border: 1px solid var(--border); background: var(--surface); font-size: 12px; text-transform: uppercase; letter-spacing: .5px; color: var(--text-muted); text-align: left; }
 .add-button > span:first-child { color: var(--accent-bright); font-size: 20px; line-height: 1; }
 .add-button:hover { background: var(--surface-raised); color: var(--text); }
 .add-arrow { margin-left: auto; font-size: 15px; color: var(--text-faint); }
@@ -111,11 +112,11 @@ h2 { font: 24px/1.2 var(--font-display); text-transform: uppercase; letter-spaci
 .result-count { display: block; color: var(--text-faint); font-size: 10px; margin-top: 9px; }
 .picker-results { overflow-y: auto; min-height: 100px; padding: 0 24px; }
 .picker-list { padding: 0; margin: 0; list-style: none; }
-.picker-list button { width: 100%; background: transparent; border: 0; border-bottom: 1px solid var(--border); padding: 16px 8px; display: flex; align-items: center; justify-content: space-between; gap: 16px; text-align: left; font-size: 16px; min-height: 64px; }
+.picker-list button { width: 100%; background: transparent; border: 0; border-bottom: 1px solid var(--border); padding: 8px; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; font-size: 14px; min-height: 40px; }
 .picker-list button > span:first-child { text-transform: uppercase; font-weight: 700; }
 .picker-list button:hover { background: var(--surface-raised); }
 .picker-list button:focus-visible { outline-offset: -2px; }
-.picker-list strong { white-space: nowrap; font-size: 16px; font-variant-numeric: tabular-nums; }
+.picker-list strong { white-space: nowrap; font-size: 14px; font-variant-numeric: tabular-nums; }
 .picker-list strong small { color: var(--text-faint); text-transform: uppercase; font-size: 9px; font-weight: normal; }
 .option-indicator { font-size: 10px; color: var(--text-muted); white-space: nowrap; }
 .option-indicator b { font-size: 20px; margin-left: 10px; }
@@ -144,7 +145,8 @@ h2 { font: 24px/1.2 var(--font-display); text-transform: uppercase; letter-spaci
   .list-manager select { width: 100%; }
   .app-footer { flex-wrap: wrap; }
   .app-footer > div { width: 100%; }
-  .unit-name { font-size: 18px; line-height: 26px; }
+  .unit-name { font-size: 16px; line-height: 24px; }
+  .unit-actions > button, .unit-actions > select, .upgrade-row .remove-button { width: 28px; height: 28px; }
   .unit-title-bar { gap: 6px; }
   .unit-cost-line { font-size: 14px; }
   .unit-points { font-size: 14px; }
