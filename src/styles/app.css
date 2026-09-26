@@ -69,11 +69,11 @@ h2 { font: 24px/1.2 var(--font-display); text-transform: uppercase; letter-spaci
 .unit-leader { flex: 1; min-width: 12px; border-bottom: 1px dotted var(--text-muted); }
 .unit-points { font-size: 16px; font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
 .unit-upgrades { margin: 0 8px 4px 32px; }
-.upgrade-row { display: flex; align-items: center; gap: 12px; background: var(--surface-label); color: var(--text); padding: 5px 8px; margin-top: 4px; font-size: 14px; }
-.upgrade-name { flex: 1; min-width: 0; }
+.upgrade-row { display: grid; grid-template-columns: minmax(0, 1fr) 120px 40px 28px; align-items: center; gap: 12px; background: var(--surface-label); color: var(--text); padding: 5px 8px; margin-top: 4px; font-size: 14px; }
+.upgrade-name { min-width: 0; }
 .upgrade-quantity { display: flex; align-items: center; gap: 8px; font-size: 12px; }
 .upgrade-quantity input { width: 52px; background: var(--surface-heading); border: 1px solid var(--border-strong); color: var(--text); padding: 4px; }
-.upgrade-points { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.upgrade-points { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .upgrade-row .remove-button { color: var(--text); }
 .add-wargear-button { margin-top: 8px; }
 .wargear-picker { border: 1px solid var(--border); border-top: 0; background: var(--surface); }
@@ -146,8 +146,11 @@ h2 { font: 24px/1.2 var(--font-display); text-transform: uppercase; letter-spaci
   .unit-title-bar { gap: 6px; }
   .unit-cost-line { font-size: 14px; }
   .unit-points { font-size: 14px; }
-  .upgrade-row { flex-wrap: wrap; gap: 8px; }
-  .upgrade-name { flex-basis: calc(100% - 40px); }
+  .upgrade-row { grid-template-columns: minmax(0, 1fr) 70px; gap: 8px; }
+  .upgrade-name { grid-column: 1; grid-row: 1; }
+  .upgrade-row .remove-button { grid-column: 2; grid-row: 1; justify-self: end; }
+  .upgrade-quantity { grid-column: 1; grid-row: 2; }
+  .upgrade-points { grid-column: 2; grid-row: 2; justify-self: end; }
   .unit-picker { max-height: calc(100dvh - 24px); }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }
