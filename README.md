@@ -124,12 +124,12 @@ saved source is unavailable, the app displays a warning rather than silently
 using another edition’s prices.
 
 The September 2026 snapshot and **Interim (unreleased)** source are bundled.
-The interim source contains exactly 56 user-supplied units, 69 model-size options,
+The interim source contains exactly 56 user-supplied units, 72 model-size options,
 and six per-item wargear choices. Names follow the official Space Marines MFM
 where present; the four Blood Angels names were checked against their MFM, and
 Kaius Konorius was confirmed by the user. Its prices are the user's unreleased
 figures, not officially verified prices or a transcription of the linked video.
-Sanguinary Guard's doubled-size option is intentionally omitted. The interim date
+Sanguinary Guard has explicit 1st-2nd and 3rd+ prices for both 3 and 6 models. The interim date
 records preparation, not a publication date. Unlisted units, sizes, wargear and
 first/subsequent-unit pricing tiers are not inherited from the official dataset.
 

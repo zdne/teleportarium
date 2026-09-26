@@ -537,7 +537,10 @@ const expected: [string, [number, number][]][] = [
       [
         3,
         135
-      ]
+      ],
+      [3, 150],
+      [6, 275],
+      [6, 290]
     ]
   ],
   [
@@ -573,8 +576,16 @@ test('interim includes exactly the supplied units, sizes and prices', () => {
     const official = munitorum.units.find(unit => unit.id === id);
     if (official) assert.equal(unit.name, official.name);
   }
-  assert.equal(interim.units.reduce((count, unit) => count + unit.options.length, 0), 69);
+  assert.equal(interim.units.reduce((count, unit) => count + unit.options.length, 0), 72);
   assert.match(interim.label, /unreleased/);
+});
+test('Sanguinary Guard tiers remain explicit and old 135-point entries still resolve', () => {
+  const entry = { instanceId: 'sg', unitId: 'sanguinary-guard', optionId: '3-models', bucket: 'melee' as const };
+  assert.equal(calculateEntryPoints(entry, interim), 135);
+  for (const [optionId, points] of [['3-models-1st-to-2nd', 135], ['3-models-3rd', 150], ['6-models-1st-to-2nd', 275], ['6-models-3rd', 290]] as const) {
+    assert.equal(calculateEntryPoints({ ...entry, optionId }, interim), points);
+  }
+  assert.equal(resolveEntry({ ...entry, optionId: '6-models' }, interim).option, undefined);
 });
 test('only supplied wargear is available and is charged per item', () => {
   const expected = [

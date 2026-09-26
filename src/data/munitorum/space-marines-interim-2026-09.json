@@ -8,7 +8,7 @@
   "retrieved": "2026-09-26",
   "dateVerified": false,
   "sourceVersion": "Interim · unreleased",
-  "completeness": "56 units explicitly supplied by the user, including Blood Angels and Kaius Konorius. Only listed model sizes and wargear included. Sanguinary Guard 6-model pricing omitted at the user's request. All prices are user-supplied and unreleased, not official MFM values. The date records dataset preparation, not publication.",
+  "completeness": "56 units explicitly supplied by the user, including Blood Angels and Kaius Konorius. Only listed model sizes and wargear included. Sanguinary Guard includes user-supplied 1st-2nd and 3rd+ unit prices for 3 and 6 models. All prices are user-supplied and unreleased, not official MFM values. The date records dataset preparation, not publication.",
   "units": [
     {
       "id": "intercessor-squad",
@@ -700,9 +700,25 @@
       "name": "Sanguinary Guard",
       "options": [
         {
-          "id": "3-models",
-          "label": "3 models",
-          "points": 135
+          "id": "3-models-1st-to-2nd",
+          "label": "3 models · 1st to 2nd",
+          "points": 135,
+          "aliases": ["3-models"]
+        },
+        {
+          "id": "3-models-3rd",
+          "label": "3 models · 3rd+",
+          "points": 150
+        },
+        {
+          "id": "6-models-1st-to-2nd",
+          "label": "6 models · 1st to 2nd",
+          "points": 275
+        },
+        {
+          "id": "6-models-3rd",
+          "label": "6 models · 3rd+",
+          "points": 290
         }
       ]
     },
@@ -738,6 +754,6 @@
     "Unit names mapped to the current Space Marines MFM where present; Blood Angels names and model counts checked against the Blood Angels MFM. Kaius Konorius identity supplied by the user: https://wh40k.lexicanum.com/wiki/Kaius_Konorius.",
     "2x means double the model count. A lone squad price uses its smaller/current listed size. No other sizes or quantity-based pricing tiers are inferred.",
     "Paid wargear costs are per item and selected separately; Redemptor base is 170 with optional 10-point plasma, Executioner base is 260 with optional 10-point laser.",
-    "Sanguinary Guard 6-model pricing intentionally omitted; only 3 models at 135 points is selectable."
+    "Sanguinary Guard prices: 3 models cost 135 for 1st-2nd units or 150 for 3rd+; 6 models cost 275 for 1st-2nd units or 290 for 3rd+. The old 3-model selection remains an alias of the 135-point option."
   ]
 }

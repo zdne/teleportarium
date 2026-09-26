@@ -3,6 +3,7 @@ import type { Munitorum } from '../types/munitorum';
 export function resolveEntry(entry: ArmyEntry, data: Munitorum) {
   const unit = data.units.find(unit => unit.id === entry.unitId);
   let option = unit?.options.find(option => option.id === entry.optionId) ?? unit?.upgrades?.find(option => option.id === entry.optionId);
+  if (!option) option = unit?.options.find(option => option.aliases?.includes(entry.optionId));
   // Flat interim prices can replace an official pricing tier for the same size.
   // Never choose automatically when the target has multiple prices for that size.
   if (!option && unit) {
