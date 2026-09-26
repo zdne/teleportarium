@@ -31,6 +31,8 @@ link opens the official page only when clicked.
 - Searchable, alphabetically sorted unit register with explicit option selection.
 - Duplicate units, removal, and moving entries via the small arrow control.
 - Automatic localStorage persistence and confirmation before clearing.
+- Minimal named list storage: choose a list to load, Save to update it, Save as new
+  to create a copy, and Delete to remove a saved list. Lists remain in this browser.
 - Responsive dark reference-manual styling, native modal keyboard handling,
   focus restoration, and reduced-motion support.
 - Invalid saved rows are discarded; stale references remain removable and do not
@@ -98,3 +100,16 @@ npx playwright test
 For manual review, follow the acceptance checklist in `Kickoff.md`, especially
 multi-option units, moving duplicates independently, refreshing the army, going
 over 2,000 points, clear confirmation, and the phone layout.
+
+## Saved lists
+
+The current draft still saves automatically. Named lists are separate snapshots:
+use **Save** to name a draft or update the selected saved list, and **Save as new**
+to create another list. Choose a name in the selector to load it. Unsaved changes
+require confirmation before switching. Selecting **New empty list** while a saved
+list is active starts a blank draft; **Clear list** also empties the current draft.
+Deleting a saved list requires confirmation and retains the current draft.
+
+Lists include model options and attached wargear. Saved lists use the separate
+`warhammer-saved-lists:v1` storage key; existing drafts stay intact. There is no
+file export or cloud storage.

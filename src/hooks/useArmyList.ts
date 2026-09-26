@@ -1,4 +1,4 @@
-import { STORAGE_KEY, type BucketId } from '../types/army';
+import { STORAGE_KEY, type BucketId, type ArmyList } from '../types/army';
 import { munitorum } from '../data/munitorum';
 import { decodeArmy, emptyArmy } from '../utils/storage';
 import { useLocalStorage } from './useLocalStorage';
@@ -6,6 +6,7 @@ export function useArmyList() {
   const { value: army, setValue: setArmy, warning } = useLocalStorage(STORAGE_KEY, raw => decodeArmy(raw, munitorum.id));
   return {
     army, warning,
+    load: (list: ArmyList) => setArmy(list),
     add: (unitId: string, optionId: string, bucket: BucketId) => setArmy(previous => ({
       ...previous, entries: [...previous.entries, { instanceId: crypto.randomUUID(), unitId, optionId, bucket }],
     })),
