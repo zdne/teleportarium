@@ -8,7 +8,7 @@
   "retrieved": "2026-09-26",
   "dateVerified": false,
   "sourceVersion": "v1.4",
-  "completeness": "All 103 units displayed on the Space Marines page; Legends, detachments and enhancements excluded. Paid wargear is represented by explicitly labelled upgrade-only options, added separately to the base unit.",
+  "completeness": "All 103 units displayed on the Space Marines page; Legends, detachments and enhancements excluded. Paid wargear and optional additional models are attached upgrades with manually selected quantities.",
   "units": [
     {
       "id": "aggressor-squad",
@@ -291,10 +291,12 @@
           "id": "6-models",
           "label": "6 models",
           "points": 365
-        },
+        }
+      ],
+      "upgrades": [
         {
           "id": "per-twin-lascannon-upgrade-only",
-          "label": "per Twin lascannon · Upgrade only",
+          "label": "Twin lascannon",
           "points": 5
         }
       ]
@@ -881,10 +883,12 @@
           "id": "6-models",
           "label": "6 models",
           "points": 140
-        },
+        }
+      ],
+      "upgrades": [
         {
           "id": "1-invader-atv",
-          "label": "+ 1 Invader ATV",
+          "label": "1 Invader ATV",
           "points": 60
         }
       ]
@@ -950,10 +954,12 @@
           "id": "1-model-3rd",
           "label": "1 model · 3rd+ ",
           "points": 210
-        },
+        }
+      ],
+      "upgrades": [
         {
           "id": "per-macro-plasma-incinerator-upgrade-only",
-          "label": "per Macro plasma incinerator · Upgrade only",
+          "label": "Macro plasma incinerator",
           "points": 10
         }
       ]
@@ -1003,10 +1009,12 @@
           "id": "1-model-3rd",
           "label": "1 model · 3rd+ ",
           "points": 275
-        },
+        }
+      ],
+      "upgrades": [
         {
           "id": "per-heavy-laser-destroyer-upgrade-only",
-          "label": "per Heavy laser destroyer · Upgrade only",
+          "label": "Heavy laser destroyer",
           "points": 10
         }
       ]
@@ -1201,10 +1209,12 @@
           "id": "10-models",
           "label": "10 models",
           "points": 310
-        },
+        }
+      ],
+      "upgrades": [
         {
           "id": "per-thunder-hammer-upgrade-only",
-          "label": "per Thunder Hammer · Upgrade only",
+          "label": "Thunder Hammer",
           "points": 5
         }
       ]
@@ -1482,15 +1492,17 @@
           "id": "6-models-2nd",
           "label": "6 models · 2nd+ ",
           "points": 250
-        },
+        }
+      ],
+      "upgrades": [
         {
           "id": "per-banner-of-macragge-upgrade-only",
-          "label": "per Banner of Macragge · Upgrade only",
+          "label": "Banner of Macragge",
           "points": 15
         },
         {
           "id": "per-blades-of-honour-upgrade-only",
-          "label": "per Blades of honour · Upgrade only",
+          "label": "Blades of honour",
           "points": 10
         }
       ]

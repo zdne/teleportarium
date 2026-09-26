@@ -32,6 +32,8 @@ for (const card of cards) {
     }
   }
   if (!options.length) throw new Error(`Missing options: ${name}`);
-  units.push({ id: slug(name), name, options });
+  const upgrades = options.filter(option => /Upgrade only|^\+/.test(option.label));
+  units.push({ id: slug(name), name, options: options.filter(option => !upgrades.includes(option)),
+    ...(upgrades.length ? { upgrades: upgrades.map(option => ({ ...option, label: option.label.replace(/^per /, '').replace(/ · Upgrade only$/, '').replace(/^\+ /, '').trim() })) } : {}) });
 }
-console.log(JSON.stringify({ id: 'space-marines-2026-09', faction: 'Space Marines', label: 'Space Marines — September 2026', source: 'Warhammer Community Munitorum Field Manual', sourceUrl: 'https://mfm.warhammer-community.com/en/space-marines', updated: '2026-09-02', retrieved: '2026-09-26', dateVerified: false, sourceVersion: 'v1.4', completeness: 'All 101 units displayed on the Space Marines page; Legends, detachments and enhancements excluded. Paid wargear is represented by explicitly labelled upgrade-only options, added separately to the base unit.', units }, null, 2));
+console.log(JSON.stringify({ id: 'space-marines-2026-09', faction: 'Space Marines', label: 'Space Marines — September 2026', source: 'Warhammer Community Munitorum Field Manual', sourceUrl: 'https://mfm.warhammer-community.com/en/space-marines', updated: '2026-09-02', retrieved: '2026-09-26', dateVerified: false, sourceVersion: 'v1.4', completeness: `All ${units.length} units displayed on the Space Marines page; Legends, detachments and enhancements excluded. Paid wargear and optional additional models are attached upgrades with manually selected quantities.`, units }, null, 2));

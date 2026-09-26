@@ -17,6 +17,12 @@ export function useArmyList() {
       return { ...previous, entries };
     }),
     remove: (id: string) => setArmy(previous => ({ ...previous, entries: previous.entries.filter(entry => entry.instanceId !== id) })),
+    setUpgrade: (id: string, upgradeId: string, quantity: number) => setArmy(previous => ({ ...previous,
+      entries: previous.entries.map(entry => entry.instanceId === id ? { ...entry,
+        upgrades: [...(entry.upgrades ?? []).filter(upgrade => upgrade.upgradeId !== upgradeId),
+          ...(Number.isSafeInteger(quantity) && quantity > 0 ? [{ upgradeId, quantity }] : [])],
+      } : entry),
+    })),
     move: (id: string, bucket: BucketId) => setArmy(previous => ({ ...previous, entries: previous.entries.map(entry => entry.instanceId === id ? { ...entry, bucket } : entry) })),
     clear: () => setArmy(emptyArmy(munitorum.id)),
   };

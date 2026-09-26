@@ -67,10 +67,15 @@ is retained as `updated`, but was not independently confirmed from the page;
 `dateVerified: false` and `retrieved` record this distinction.
 
 First/subsequent-unit prices are separate selectable options, without automatic
-validation. Paid wargear is explicitly labelled **Upgrade only**: add the base
-unit, then add each paid upgrade as a separate entry. The Outrider `+ 1 Invader ATV`
-option is likewise an additional cost, not a complete squad. The app performs no
-wargear validation.
+validation. Paid wargear and the optional Outrider Invader ATV are attached
+wargear: add the base unit, then use its **Add wargear** button and set the
+quantity. Wargear rows use the MFM cost-band background. Wargear points contribute
+to totals, but wargear does not count as units. Moving or duplicating a unit includes
+its wargear. The app performs no wargear validation.
+
+Old standalone wargear entries automatically attach when exactly one matching
+base unit exists in the same bucket. Ambiguous or orphaned wargear remains visible
+with their original points and a note to remove and reapply under the intended unit.
 
 The army starts empty and the target is fixed at 2,000. Anton headings and Bitter
 body text match the MFM font families, bundled locally through Fontsource under
