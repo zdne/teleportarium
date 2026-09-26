@@ -123,8 +123,21 @@ Missing units/options remain visible but do not contribute points. If an entire
 saved source is unavailable, the app displays a warning rather than silently
 using another edition’s prices.
 
-Only the September 2026 snapshot is currently bundled. To add another verified
-edition, put its JSON in `src/data/munitorum/`, import it in `index.ts`, and append
+The September 2026 snapshot and **Interim (unreleased)** source are bundled.
+The interim source contains exactly 56 user-supplied units, 69 model-size options,
+and six per-item wargear choices. Names follow the official Space Marines MFM
+where present; the four Blood Angels names were checked against their MFM, and
+Kaius Konorius was confirmed by the user. Its prices are the user's unreleased
+figures, not officially verified prices or a transcription of the linked video.
+Sanguinary Guard's doubled-size option is intentionally omitted. The interim date
+records preparation, not a publication date. Unlisted units, sizes, wargear and
+first/subsequent-unit pricing tiers are not inherited from the official dataset.
+
+When switching, a previous pricing-tier selection resolves to the same model
+count if the target has exactly one price for that count. Ambiguous or missing
+options stay unavailable, rather than silently choosing a tier.
+
+To add another edition, put its JSON in `src/data/munitorum/`, import it in `index.ts`, and append
 it to `munitorums`. Give it a unique dataset ID; retain stable unit/option/wargear
 IDs where the underlying selection is the same. Each snapshot uses the existing
 Munitorum schema. The selector lists registered sources without runtime fetching.

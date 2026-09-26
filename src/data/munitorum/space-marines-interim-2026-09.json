@@ -1,0 +1,743 @@
+{
+  "id": "space-marines-interim-2026-09",
+  "faction": "Space Marines",
+  "label": "Space Marines — Interim (unreleased)",
+  "source": "User-supplied unreleased points; video referenced by user",
+  "sourceUrl": "https://www.youtube.com/watch?v=PXGD6oVO3IQ&t=1715s",
+  "updated": "2026-09-26",
+  "retrieved": "2026-09-26",
+  "dateVerified": false,
+  "sourceVersion": "Interim · unreleased",
+  "completeness": "56 units explicitly supplied by the user, including Blood Angels and Kaius Konorius. Only listed model sizes and wargear included. Sanguinary Guard 6-model pricing omitted at the user's request. All prices are user-supplied and unreleased, not official MFM values. The date records dataset preparation, not publication.",
+  "units": [
+    {
+      "id": "intercessor-squad",
+      "name": "Intercessor Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 85
+        }
+      ]
+    },
+    {
+      "id": "inceptor-squad",
+      "name": "Inceptor Squad",
+      "options": [
+        {
+          "id": "3-models",
+          "label": "3 models",
+          "points": 130
+        },
+        {
+          "id": "6-models",
+          "label": "6 models",
+          "points": 260
+        }
+      ]
+    },
+    {
+      "id": "assault-intercessors-with-jump-packs",
+      "name": "Assault Intercessors With Jump Packs",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 95
+        }
+      ]
+    },
+    {
+      "id": "vanguard-veteran-squad-with-jump-packs",
+      "name": "Vanguard Veteran Squad With Jump Packs",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 110
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 220
+        }
+      ]
+    },
+    {
+      "id": "company-heroes",
+      "name": "Company Heroes",
+      "options": [
+        {
+          "id": "4-models",
+          "label": "4 models",
+          "points": 125
+        }
+      ]
+    },
+    {
+      "id": "bladeguard-veteran-squad",
+      "name": "Bladeguard Veteran Squad",
+      "options": [
+        {
+          "id": "3-models",
+          "label": "3 models",
+          "points": 90
+        },
+        {
+          "id": "6-models",
+          "label": "6 models",
+          "points": 180
+        }
+      ]
+    },
+    {
+      "id": "sternguard-veteran-squad",
+      "name": "Sternguard Veteran Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 105
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 210
+        }
+      ]
+    },
+    {
+      "id": "terminator-squad",
+      "name": "Terminator Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 190
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 380
+        }
+      ],
+      "upgrades": [
+        {
+          "id": "cyclone-missile-launcher",
+          "label": "Cyclone missile launcher",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "terminator-assault-squad",
+      "name": "Terminator Assault Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 170
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 340
+        }
+      ],
+      "upgrades": [
+        {
+          "id": "storm-shield",
+          "label": "Storm shield",
+          "points": 5
+        }
+      ]
+    },
+    {
+      "id": "infernus-squad",
+      "name": "Infernus Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 95
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 190
+        }
+      ]
+    },
+    {
+      "id": "hellblaster-squad",
+      "name": "Hellblaster Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 115
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 230
+        }
+      ]
+    },
+    {
+      "id": "desolation-squad",
+      "name": "Desolation Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 140
+        }
+      ]
+    },
+    {
+      "id": "aggressor-squad",
+      "name": "Aggressor Squad",
+      "options": [
+        {
+          "id": "3-models",
+          "label": "3 models",
+          "points": 90
+        },
+        {
+          "id": "6-models",
+          "label": "6 models",
+          "points": 180
+        }
+      ]
+    },
+    {
+      "id": "eradicator-squad",
+      "name": "Eradicator Squad",
+      "options": [
+        {
+          "id": "3-models",
+          "label": "3 models",
+          "points": 100
+        },
+        {
+          "id": "6-models",
+          "label": "6 models",
+          "points": 200
+        }
+      ]
+    },
+    {
+      "id": "eradicator-squad-with-heavy-bolters",
+      "name": "Eradicator Squad With Heavy Bolters",
+      "options": [
+        {
+          "id": "3-models",
+          "label": "3 models",
+          "points": 100
+        },
+        {
+          "id": "6-models",
+          "label": "6 models",
+          "points": 215
+        }
+      ]
+    },
+    {
+      "id": "scout-squad",
+      "name": "Scout Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 65
+        }
+      ]
+    },
+    {
+      "id": "infiltrator-squad",
+      "name": "Infiltrator Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 85
+        }
+      ]
+    },
+    {
+      "id": "incursor-squad",
+      "name": "Incursor Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 90
+        }
+      ]
+    },
+    {
+      "id": "eliminator-squad",
+      "name": "Eliminator Squad",
+      "options": [
+        {
+          "id": "3-models",
+          "label": "3 models",
+          "points": 85
+        }
+      ]
+    },
+    {
+      "id": "reiver-squad",
+      "name": "Reiver Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 85
+        }
+      ]
+    },
+    {
+      "id": "redemptor-dreadnought",
+      "name": "Redemptor Dreadnought",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 170
+        }
+      ],
+      "upgrades": [
+        {
+          "id": "per-macro-plasma-incinerator-upgrade-only",
+          "label": "Macro plasma incinerator",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "ballistus-dreadnought",
+      "name": "Ballistus Dreadnought",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 150
+        }
+      ]
+    },
+    {
+      "id": "brutalis-dreadnought",
+      "name": "Brutalis Dreadnought",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 160
+        }
+      ]
+    },
+    {
+      "id": "storm-speeder-hailstrike",
+      "name": "Storm Speeder Hailstrike",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 110
+        }
+      ]
+    },
+    {
+      "id": "storm-speeder-hammerstrike",
+      "name": "Storm Speeder Hammerstrike",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 140
+        }
+      ]
+    },
+    {
+      "id": "storm-speeder-thunderstrike",
+      "name": "Storm Speeder Thunderstrike",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 140
+        }
+      ]
+    },
+    {
+      "id": "land-speeder",
+      "name": "Land Speeder",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 105
+        }
+      ]
+    },
+    {
+      "id": "repulsor",
+      "name": "Repulsor",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 190
+        }
+      ]
+    },
+    {
+      "id": "repulsor-executioner",
+      "name": "Repulsor Executioner",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 260
+        }
+      ],
+      "upgrades": [
+        {
+          "id": "per-heavy-laser-destroyer-upgrade-only",
+          "label": "Heavy laser destroyer",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "land-raider",
+      "name": "Land Raider",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 245
+        }
+      ]
+    },
+    {
+      "id": "gladiator-lancer",
+      "name": "Gladiator Lancer",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 160
+        }
+      ]
+    },
+    {
+      "id": "gladiator-reaper",
+      "name": "Gladiator Reaper",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 165
+        }
+      ]
+    },
+    {
+      "id": "rhino",
+      "name": "Rhino",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 70
+        }
+      ]
+    },
+    {
+      "id": "impulsor",
+      "name": "Impulsor",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 70
+        }
+      ],
+      "upgrades": [
+        {
+          "id": "impulsor-comms-array",
+          "label": "Impulsor comms array",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "captain-in-terminator-armour",
+      "name": "Captain In Terminator Armour",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 90
+        }
+      ]
+    },
+    {
+      "id": "captain-in-gravis-armour",
+      "name": "Captain In Gravis Armour",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 90
+        }
+      ]
+    },
+    {
+      "id": "librarian-in-phobos-armour",
+      "name": "Librarian In Phobos Armour",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 75
+        }
+      ]
+    },
+    {
+      "id": "lieutenant-with-combi-weapon",
+      "name": "Lieutenant With Combi-Weapon",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 85
+        }
+      ]
+    },
+    {
+      "id": "captain-with-jump-pack",
+      "name": "Captain With Jump Pack",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 90
+        }
+      ]
+    },
+    {
+      "id": "chaplain-with-jump-pack",
+      "name": "Chaplain With Jump Pack",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 75
+        }
+      ]
+    },
+    {
+      "id": "chaplain-in-terminator-armour",
+      "name": "Chaplain In Terminator Armour",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 75
+        }
+      ]
+    },
+    {
+      "id": "ancient-in-terminator-armour",
+      "name": "Ancient In Terminator Armour",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 75
+        }
+      ]
+    },
+    {
+      "id": "bladeguard-ancient",
+      "name": "Bladeguard Ancient",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 70
+        }
+      ]
+    },
+    {
+      "id": "apothecary",
+      "name": "Apothecary",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 45
+        }
+      ]
+    },
+    {
+      "id": "apothecary-biologis",
+      "name": "Apothecary Biologis",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 60
+        }
+      ]
+    },
+    {
+      "id": "roboute-guilliman",
+      "name": "Roboute Guilliman",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 415
+        }
+      ]
+    },
+    {
+      "id": "marneus-calgar-in-armour-of-antilochus",
+      "name": "Marneus Calgar In Armour Of Antilochus",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 180
+        }
+      ]
+    },
+    {
+      "id": "chief-librarian-tigurius",
+      "name": "Chief Librarian Tigurius",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 115
+        }
+      ]
+    },
+    {
+      "id": "cato-sicarius",
+      "name": "Cato Sicarius",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 115
+        }
+      ]
+    },
+    {
+      "id": "wardens-of-ultramar",
+      "name": "Wardens Of Ultramar",
+      "options": [
+        {
+          "id": "6-models",
+          "label": "6 models",
+          "points": 115
+        }
+      ]
+    },
+    {
+      "id": "victrix-honour-guard",
+      "name": "Victrix Honour Guard",
+      "options": [
+        {
+          "id": "3-models",
+          "label": "3 models",
+          "points": 120
+        },
+        {
+          "id": "6-models",
+          "label": "6 models",
+          "points": 250
+        }
+      ],
+      "upgrades": [
+        {
+          "id": "per-banner-of-macragge-upgrade-only",
+          "label": "Banner of Macragge",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "commander-dante",
+      "name": "Commander Dante",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 140
+        }
+      ]
+    },
+    {
+      "id": "astorath",
+      "name": "Astorath",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 105
+        }
+      ]
+    },
+    {
+      "id": "sanguinary-guard",
+      "name": "Sanguinary Guard",
+      "options": [
+        {
+          "id": "3-models",
+          "label": "3 models",
+          "points": 135
+        }
+      ]
+    },
+    {
+      "id": "death-company-marines-with-jump-packs",
+      "name": "Death Company Marines With Jump Packs",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 140
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 280
+        }
+      ]
+    },
+    {
+      "id": "kaius-konorius",
+      "name": "Kaius Konorius",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 100
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Unit names mapped to the current Space Marines MFM where present; Blood Angels names and model counts checked against the Blood Angels MFM. Kaius Konorius identity supplied by the user: https://wh40k.lexicanum.com/wiki/Kaius_Konorius.",
+    "2x means double the model count. A lone squad price uses its smaller/current listed size. No other sizes or quantity-based pricing tiers are inferred.",
+    "Paid wargear costs are per item and selected separately; Redemptor base is 170 with optional 10-point plasma, Executioner base is 260 with optional 10-point laser.",
+    "Sanguinary Guard 6-model pricing intentionally omitted; only 3 models at 135 points is selectable."
+  ]
+}
