@@ -1,9 +1,9 @@
 import { BUCKETS, type ArmyEntry, type BucketId } from '../types/army';
-import { munitorum } from '../data/munitorum';
+import type { Munitorum } from '../types/munitorum';
 import { resolveEntry } from '../utils/points';
 import { UnitUpgrades, type SetUpgrade } from './UnitUpgrades';
-export function SelectedUnitRow({ entry, duplicate, remove, move, setUpgrade }: { entry: ArmyEntry; duplicate: (id: string) => void; remove: (id: string) => void; move: (id: string, bucket: BucketId) => void; setUpgrade: SetUpgrade }) {
-  const { unit, option } = resolveEntry(entry, munitorum);
+export function SelectedUnitRow({ data, entry, duplicate, remove, move, setUpgrade }: { data: Munitorum; entry: ArmyEntry; duplicate: (id: string) => void; remove: (id: string) => void; move: (id: string, bucket: BucketId) => void; setUpgrade: SetUpgrade }) {
+  const { unit, option } = resolveEntry(entry, data);
   const name = unit?.name ?? entry.unitId;
   const legacyUpgrade = unit?.upgrades?.some(upgrade => upgrade.id === entry.optionId);
   return <li className="unit-row"><div className="unit-title-bar"><span className="unit-name">{name.toUpperCase()}</span><div className="unit-actions">

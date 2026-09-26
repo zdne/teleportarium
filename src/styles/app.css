@@ -19,6 +19,8 @@ h1 { font: 56px/1.2 var(--font-display); text-transform: uppercase; letter-spaci
 .title-dot { color: var(--accent); }
 .subtitle { color: var(--text-muted); font-size: 12px; margin-top: 7px; }
 .edition { font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px; }
+.edition label { display: block; font-size: 10px; color: var(--text-muted); margin-bottom: 8px; }
+.edition select { max-width: 100%; padding: 8px 12px; color: var(--text); background: var(--surface); border: 1px solid var(--border); font-size: 12px; }
 .edition small { display: block; color: var(--text-faint); font-size: 10px; letter-spacing: .3px; text-transform: none; padding-top: 9px; }
 .status-dot { display: inline-block; width: 5px; height: 5px; margin-right: 8px; background: var(--accent); }
 .points-summary { background: var(--surface); border: 1px solid var(--border); display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; align-items: center; position: relative; padding: 24px 28px 27px; }

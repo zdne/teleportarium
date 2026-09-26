@@ -22,7 +22,7 @@ test('corrupt saves reset; valid entries survive while malformed rows are discar
   const army = decodeArmy(JSON.stringify({ munitorumId: 'old', targetPoints: 'bad', entries: [null, entry, entry, { ...entry, instanceId: 'b', bucket: 'invalid' }] }), munitorum.id);
   assert.equal(army.entries.length, 1);
   assert.equal(army.targetPoints, 2000);
-  assert.equal(army.munitorumId, munitorum.id);
+  assert.equal(army.munitorumId, 'old');
   assert.equal(calculateTotalPoints(army.entries, munitorum), 0);
 });
 test('dataset has unique identifiers and source-backed nonnegative options', () => {

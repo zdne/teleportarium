@@ -1,10 +1,9 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { BUCKETS, type BucketId } from '../types/army';
-import type { MunitorumUnit } from '../types/munitorum';
-import { munitorum } from '../data/munitorum';
+import type { Munitorum, MunitorumUnit } from '../types/munitorum';
 import { UnitOptionPicker } from './UnitOptionPicker';
-const sortedUnits = [...munitorum.units].sort((a, b) => a.name.localeCompare(b.name));
-export function UnitPicker({ bucket, close, add }: { bucket: BucketId; close: () => void; add: (unitId: string, optionId: string, bucket: BucketId) => void }) {
+export function UnitPicker({ data, bucket, close, add }: { data: Munitorum; bucket: BucketId; close: () => void; add: (unitId: string, optionId: string, bucket: BucketId) => void }) {
+  const sortedUnits = useMemo(() => [...data.units].sort((a, b) => a.name.localeCompare(b.name)), [data]);
   const dialog = useRef<HTMLDialogElement>(null);
   const search = useRef<HTMLInputElement>(null);
   const [query, setQuery] = useState('');

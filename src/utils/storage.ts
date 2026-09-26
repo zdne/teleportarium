@@ -1,5 +1,5 @@
 import { BUCKETS, DEFAULT_POINTS_LIMIT, type ArmyList, type ArmyEntry } from '../types/army';
-import { munitorum } from '../data/munitorum';
+import { findMunitorum } from '../data/munitorum';
 export function emptyArmy(munitorumId: string): ArmyList {
   return { targetPoints: DEFAULT_POINTS_LIMIT, munitorumId, entries: [] };
 }
@@ -9,6 +9,8 @@ export function decodeArmy(raw: string | null, munitorumId: string): ArmyList {
   try {
     const value = JSON.parse(raw);
     if (!value || !Array.isArray(value.entries) || typeof value.munitorumId !== 'string') return fallback;
+    const sourceId = value.munitorumId || munitorumId;
+    const source = findMunitorum(sourceId);
     const seen = new Set<string>();
     const entries: (ArmyEntry & { upgrades: NonNullable<ArmyEntry['upgrades']> })[] = value.entries.filter((entry: unknown) => {
       if (!entry || typeof entry !== 'object') return false;
@@ -31,7 +33,7 @@ export function decodeArmy(raw: string | null, munitorumId: string): ArmyList {
     // Only attach old standalone upgrades when the parent is unambiguous.
     const migrated = new Set<string>();
     for (const entry of entries) {
-      const unit = munitorum.units.find(unit => unit.id === entry.unitId);
+      const unit = source?.units.find(unit => unit.id === entry.unitId);
       if (!unit?.upgrades?.some(upgrade => upgrade.id === entry.optionId)) continue;
       const parents = entries.filter(candidate => candidate.unitId === entry.unitId && candidate.bucket === entry.bucket && unit.options.some(option => option.id === candidate.optionId));
       if (parents.length !== 1) continue;
@@ -41,6 +43,6 @@ export function decodeArmy(raw: string | null, munitorumId: string): ArmyList {
       else parent.upgrades.push({ upgradeId: entry.optionId, quantity: 1 });
       migrated.add(entry.instanceId);
     }
-    return { ...fallback, entries: entries.filter(entry => !migrated.has(entry.instanceId)) } as ArmyList;
+    return { ...fallback, munitorumId: sourceId, entries: entries.filter(entry => !migrated.has(entry.instanceId)) } as ArmyList;
   } catch { return fallback; }
 }

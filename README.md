@@ -113,3 +113,18 @@ Deleting a saved list requires confirmation and retains the current draft.
 Lists include model options and attached wargear. Saved lists use the separate
 `warhammer-saved-lists:v1` storage key; existing drafts stay intact. There is no
 file export or cloud storage.
+
+## Points sources
+
+The header has a **Points source / MFM** selector. Changing it preserves army
+entries and recalculates points from the selected snapshot. Saved lists remember
+their source, and loading a list restores it. Clearing a list retains its source.
+Missing units/options remain visible but do not contribute points. If an entire
+saved source is unavailable, the app displays a warning rather than silently
+using another edition’s prices.
+
+Only the September 2026 snapshot is currently bundled. To add another verified
+edition, put its JSON in `src/data/munitorum/`, import it in `index.ts`, and append
+it to `munitorums`. Give it a unique dataset ID; retain stable unit/option/wargear
+IDs where the underlying selection is the same. Each snapshot uses the existing
+Munitorum schema. The selector lists registered sources without runtime fetching.

@@ -25,7 +25,7 @@ export function useSavedLists(army: ArmyList, load: (army: ArmyList) => void) {
       const target = library.lists.find(list => list.id === id);
       if (id && !target) return;
       if (dirty && !window.confirm('Replace the current draft? Changes not saved to a named list will be lost.')) return;
-      load(target ? structuredClone(target.army) : emptyArmy(munitorum.id));
+      load(target ? structuredClone(target.army) : emptyArmy(army.munitorumId));
       setLibrary(previous => ({ ...previous, selectedId: id }));
     },
     deleteSelected: () => {

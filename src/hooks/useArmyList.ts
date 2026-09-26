@@ -1,5 +1,5 @@
 import { STORAGE_KEY, type BucketId, type ArmyList } from '../types/army';
-import { munitorum } from '../data/munitorum';
+import { munitorum, findMunitorum } from '../data/munitorum';
 import { decodeArmy, emptyArmy } from '../utils/storage';
 import { useLocalStorage } from './useLocalStorage';
 export function useArmyList() {
@@ -7,6 +7,9 @@ export function useArmyList() {
   return {
     army, warning,
     load: (list: ArmyList) => setArmy(list),
+    switchMunitorum: (id: string) => {
+      if (findMunitorum(id)) setArmy(previous => ({ ...previous, munitorumId: id }));
+    },
     add: (unitId: string, optionId: string, bucket: BucketId) => setArmy(previous => ({
       ...previous, entries: [...previous.entries, { instanceId: crypto.randomUUID(), unitId, optionId, bucket }],
     })),
@@ -25,6 +28,6 @@ export function useArmyList() {
       } : entry),
     })),
     move: (id: string, bucket: BucketId) => setArmy(previous => ({ ...previous, entries: previous.entries.map(entry => entry.instanceId === id ? { ...entry, bucket } : entry) })),
-    clear: () => setArmy(emptyArmy(munitorum.id)),
+    clear: () => setArmy(previous => emptyArmy(previous.munitorumId)),
   };
 }
