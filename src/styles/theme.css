@@ -1,0 +1,12 @@
+:root {
+  color-scheme: dark;
+  --bg: #151617; --surface: #1c1e20; --surface-raised: #252729;
+  --text: #eeeae2; --text-muted: #a5a5a1; --text-faint: #858681;
+  --border: #343638; --border-strong: #4e5050;
+  --accent: #b94b42; --danger: #ef8276;
+  --spacing-xs: 4px; --spacing-sm: 8px; --spacing-md: 16px;
+  --spacing-lg: 24px; --spacing-xl: 40px;
+  --font-ui: 'Arial', 'Helvetica Neue', sans-serif;
+  --font-display: 'Impact', 'Arial Narrow', 'Helvetica Neue', sans-serif;
+  --font-numeric: 'Arial', sans-serif;
+}

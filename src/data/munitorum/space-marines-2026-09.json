@@ -1,0 +1,1532 @@
+{
+  "id": "space-marines-2026-09",
+  "faction": "Space Marines",
+  "label": "Space Marines — September 2026",
+  "source": "Warhammer Community Munitorum Field Manual",
+  "sourceUrl": "https://mfm.warhammer-community.com/en/space-marines",
+  "updated": "2026-09-02",
+  "retrieved": "2026-09-26",
+  "dateVerified": false,
+  "sourceVersion": "v1.4",
+  "completeness": "All 103 units displayed on the Space Marines page; Legends, detachments and enhancements excluded. Paid wargear is represented by explicitly labelled upgrade-only options, added separately to the base unit.",
+  "units": [
+    {
+      "id": "aggressor-squad",
+      "name": "Aggressor Squad",
+      "options": [
+        {
+          "id": "3-models-1st-to-2nd",
+          "label": "3 models · 1st to 2nd",
+          "points": 80
+        },
+        {
+          "id": "6-models-1st-to-2nd",
+          "label": "6 models · 1st to 2nd",
+          "points": 165
+        },
+        {
+          "id": "3-models-3rd",
+          "label": "3 models · 3rd+ ",
+          "points": 90
+        },
+        {
+          "id": "6-models-3rd",
+          "label": "6 models · 3rd+ ",
+          "points": 175
+        }
+      ]
+    },
+    {
+      "id": "ancient",
+      "name": "Ancient",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 40
+        }
+      ]
+    },
+    {
+      "id": "ancient-in-terminator-armour",
+      "name": "Ancient In Terminator Armour",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 65
+        }
+      ]
+    },
+    {
+      "id": "apothecary",
+      "name": "Apothecary",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 40
+        }
+      ]
+    },
+    {
+      "id": "apothecary-biologis",
+      "name": "Apothecary Biologis",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 70
+        }
+      ]
+    },
+    {
+      "id": "assault-intercessor-squad",
+      "name": "Assault Intercessor Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 75
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 150
+        }
+      ]
+    },
+    {
+      "id": "assault-intercessors-with-jump-packs",
+      "name": "Assault Intercessors With Jump Packs",
+      "options": [
+        {
+          "id": "5-models-1st-to-2nd",
+          "label": "5 models · 1st to 2nd",
+          "points": 85
+        },
+        {
+          "id": "10-models-1st-to-2nd",
+          "label": "10 models · 1st to 2nd",
+          "points": 160
+        },
+        {
+          "id": "5-models-3rd",
+          "label": "5 models · 3rd+ ",
+          "points": 95
+        },
+        {
+          "id": "10-models-3rd",
+          "label": "10 models · 3rd+ ",
+          "points": 170
+        }
+      ]
+    },
+    {
+      "id": "astraeus",
+      "name": "Astraeus",
+      "options": [
+        {
+          "id": "1-model-1st",
+          "label": "1 model · 1st",
+          "points": 525
+        },
+        {
+          "id": "1-model-2nd",
+          "label": "1 model · 2nd+ ",
+          "points": 575
+        }
+      ]
+    },
+    {
+      "id": "ballistus-dreadnought",
+      "name": "Ballistus Dreadnought",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 150
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 160
+        }
+      ]
+    },
+    {
+      "id": "bladeguard-ancient",
+      "name": "Bladeguard Ancient",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 40
+        }
+      ]
+    },
+    {
+      "id": "bladeguard-veteran-squad",
+      "name": "Bladeguard Veteran Squad",
+      "options": [
+        {
+          "id": "3-models-1st-to-2nd",
+          "label": "3 models · 1st to 2nd",
+          "points": 80
+        },
+        {
+          "id": "6-models-1st-to-2nd",
+          "label": "6 models · 1st to 2nd",
+          "points": 160
+        },
+        {
+          "id": "3-models-3rd",
+          "label": "3 models · 3rd+ ",
+          "points": 90
+        },
+        {
+          "id": "6-models-3rd",
+          "label": "6 models · 3rd+ ",
+          "points": 170
+        }
+      ]
+    },
+    {
+      "id": "brutalis-dreadnought",
+      "name": "Brutalis Dreadnought",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 150
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 160
+        }
+      ]
+    },
+    {
+      "id": "captain",
+      "name": "Captain",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 80
+        }
+      ]
+    },
+    {
+      "id": "captain-in-gravis-armour",
+      "name": "Captain In Gravis Armour",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 80
+        }
+      ]
+    },
+    {
+      "id": "captain-in-phobos-armour",
+      "name": "Captain In Phobos Armour",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 70
+        }
+      ]
+    },
+    {
+      "id": "captain-in-terminator-armour",
+      "name": "Captain In Terminator Armour",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 85
+        }
+      ]
+    },
+    {
+      "id": "captain-with-jump-pack",
+      "name": "Captain With Jump Pack",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 75
+        }
+      ]
+    },
+    {
+      "id": "centurion-assault-squad",
+      "name": "Centurion Assault Squad",
+      "options": [
+        {
+          "id": "3-models",
+          "label": "3 models",
+          "points": 150
+        },
+        {
+          "id": "6-models",
+          "label": "6 models",
+          "points": 300
+        }
+      ]
+    },
+    {
+      "id": "centurion-devastator-squad",
+      "name": "Centurion Devastator Squad",
+      "options": [
+        {
+          "id": "3-models",
+          "label": "3 models",
+          "points": 175
+        },
+        {
+          "id": "6-models",
+          "label": "6 models",
+          "points": 365
+        },
+        {
+          "id": "per-twin-lascannon-upgrade-only",
+          "label": "per Twin lascannon · Upgrade only",
+          "points": 5
+        }
+      ]
+    },
+    {
+      "id": "chaplain",
+      "name": "Chaplain",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 60
+        }
+      ]
+    },
+    {
+      "id": "chaplain-in-terminator-armour",
+      "name": "Chaplain In Terminator Armour",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 75
+        }
+      ]
+    },
+    {
+      "id": "chaplain-on-bike",
+      "name": "Chaplain On Bike",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 70
+        }
+      ]
+    },
+    {
+      "id": "chaplain-with-jump-pack",
+      "name": "Chaplain With Jump Pack",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 75
+        }
+      ]
+    },
+    {
+      "id": "company-heroes",
+      "name": "Company Heroes",
+      "options": [
+        {
+          "id": "4-models",
+          "label": "4 models",
+          "points": 105
+        }
+      ]
+    },
+    {
+      "id": "desolation-squad",
+      "name": "Desolation Squad",
+      "options": [
+        {
+          "id": "5-models-1st",
+          "label": "5 models · 1st",
+          "points": 180
+        },
+        {
+          "id": "5-models-2nd",
+          "label": "5 models · 2nd+ ",
+          "points": 210
+        }
+      ]
+    },
+    {
+      "id": "devastator-squad",
+      "name": "Devastator Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 120
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 200
+        }
+      ]
+    },
+    {
+      "id": "dreadnought",
+      "name": "Dreadnought",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 135
+        }
+      ]
+    },
+    {
+      "id": "drop-pod",
+      "name": "Drop Pod",
+      "options": [
+        {
+          "id": "1-model-1st-to-3rd",
+          "label": "1 model · 1st to 3rd",
+          "points": 60
+        },
+        {
+          "id": "1-model-4th",
+          "label": "1 model · 4th+ ",
+          "points": 70
+        }
+      ]
+    },
+    {
+      "id": "eliminator-squad",
+      "name": "Eliminator Squad",
+      "options": [
+        {
+          "id": "3-models",
+          "label": "3 models",
+          "points": 75
+        }
+      ]
+    },
+    {
+      "id": "eradicator-squad",
+      "name": "Eradicator Squad",
+      "options": [
+        {
+          "id": "3-models-1st-to-2nd",
+          "label": "3 models · 1st to 2nd",
+          "points": 90
+        },
+        {
+          "id": "6-models-1st-to-2nd",
+          "label": "6 models · 1st to 2nd",
+          "points": 180
+        },
+        {
+          "id": "3-models-3rd",
+          "label": "3 models · 3rd+ ",
+          "points": 100
+        },
+        {
+          "id": "6-models-3rd",
+          "label": "6 models · 3rd+ ",
+          "points": 190
+        }
+      ]
+    },
+    {
+      "id": "eradicator-squad-with-heavy-bolters",
+      "name": "Eradicator Squad With Heavy Bolters",
+      "options": [
+        {
+          "id": "3-models",
+          "label": "3 models",
+          "points": 80
+        }
+      ]
+    },
+    {
+      "id": "firestrike-servo-turrets",
+      "name": "Firestrike Servo-Turrets",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 75
+        },
+        {
+          "id": "2-models",
+          "label": "2 models",
+          "points": 150
+        }
+      ]
+    },
+    {
+      "id": "gladiator-lancer",
+      "name": "Gladiator Lancer",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 160
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 170
+        }
+      ]
+    },
+    {
+      "id": "gladiator-reaper",
+      "name": "Gladiator Reaper",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 160
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 170
+        }
+      ]
+    },
+    {
+      "id": "gladiator-valiant",
+      "name": "Gladiator Valiant",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 150
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 160
+        }
+      ]
+    },
+    {
+      "id": "hammerfall-bunker",
+      "name": "Hammerfall Bunker",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 175
+        }
+      ]
+    },
+    {
+      "id": "heavy-intercessor-squad",
+      "name": "Heavy Intercessor Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 100
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 200
+        }
+      ]
+    },
+    {
+      "id": "hellblaster-squad",
+      "name": "Hellblaster Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 110
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 220
+        }
+      ]
+    },
+    {
+      "id": "impulsor",
+      "name": "Impulsor",
+      "options": [
+        {
+          "id": "1-model-1st-to-3rd",
+          "label": "1 model · 1st to 3rd",
+          "points": 70
+        },
+        {
+          "id": "1-model-4th",
+          "label": "1 model · 4th+ ",
+          "points": 80
+        }
+      ]
+    },
+    {
+      "id": "inceptor-squad",
+      "name": "Inceptor Squad",
+      "options": [
+        {
+          "id": "3-models-1st-to-2nd",
+          "label": "3 models · 1st to 2nd",
+          "points": 125
+        },
+        {
+          "id": "6-models-1st-to-2nd",
+          "label": "6 models · 1st to 2nd",
+          "points": 250
+        },
+        {
+          "id": "3-models-3rd",
+          "label": "3 models · 3rd+ ",
+          "points": 140
+        },
+        {
+          "id": "6-models-3rd",
+          "label": "6 models · 3rd+ ",
+          "points": 265
+        }
+      ]
+    },
+    {
+      "id": "incursor-squad",
+      "name": "Incursor Squad",
+      "options": [
+        {
+          "id": "5-models-1st-to-2nd",
+          "label": "5 models · 1st to 2nd",
+          "points": 85
+        },
+        {
+          "id": "10-models-1st-to-2nd",
+          "label": "10 models · 1st to 2nd",
+          "points": 150
+        },
+        {
+          "id": "5-models-3rd",
+          "label": "5 models · 3rd+ ",
+          "points": 95
+        },
+        {
+          "id": "10-models-3rd",
+          "label": "10 models · 3rd+ ",
+          "points": 160
+        }
+      ]
+    },
+    {
+      "id": "infernus-squad",
+      "name": "Infernus Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 85
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 180
+        }
+      ]
+    },
+    {
+      "id": "infiltrator-squad",
+      "name": "Infiltrator Squad",
+      "options": [
+        {
+          "id": "5-models-1st-to-2nd",
+          "label": "5 models · 1st to 2nd",
+          "points": 110
+        },
+        {
+          "id": "10-models-1st-to-2nd",
+          "label": "10 models · 1st to 2nd",
+          "points": 180
+        },
+        {
+          "id": "5-models-3rd",
+          "label": "5 models · 3rd+ ",
+          "points": 120
+        },
+        {
+          "id": "10-models-3rd",
+          "label": "10 models · 3rd+ ",
+          "points": 190
+        }
+      ]
+    },
+    {
+      "id": "intercessor-squad",
+      "name": "Intercessor Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 80
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 150
+        }
+      ]
+    },
+    {
+      "id": "invader-atv",
+      "name": "Invader ATV",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 60
+        }
+      ]
+    },
+    {
+      "id": "invictor-tactical-warsuit",
+      "name": "Invictor Tactical Warsuit",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 125
+        }
+      ]
+    },
+    {
+      "id": "judiciar",
+      "name": "Judiciar",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 55
+        }
+      ]
+    },
+    {
+      "id": "land-raider",
+      "name": "Land Raider",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 220
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 240
+        }
+      ]
+    },
+    {
+      "id": "land-raider-crusader",
+      "name": "Land Raider Crusader",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 220
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 240
+        }
+      ]
+    },
+    {
+      "id": "land-raider-redeemer",
+      "name": "Land Raider Redeemer",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 260
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 280
+        }
+      ]
+    },
+    {
+      "id": "land-speeder",
+      "name": "Land Speeder",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 105
+        }
+      ]
+    },
+    {
+      "id": "librarian",
+      "name": "Librarian",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 70
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 80
+        }
+      ]
+    },
+    {
+      "id": "librarian-in-phobos-armour",
+      "name": "Librarian In Phobos Armour",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 70
+        }
+      ]
+    },
+    {
+      "id": "librarian-in-terminator-armour",
+      "name": "Librarian In Terminator Armour",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 85
+        }
+      ]
+    },
+    {
+      "id": "lieutenant",
+      "name": "Lieutenant",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 45
+        }
+      ]
+    },
+    {
+      "id": "lieutenant-in-phobos-armour",
+      "name": "Lieutenant In Phobos Armour",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 45
+        }
+      ]
+    },
+    {
+      "id": "lieutenant-in-reiver-armour",
+      "name": "Lieutenant In Reiver Armour",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 45
+        }
+      ]
+    },
+    {
+      "id": "lieutenant-with-combi-weapon",
+      "name": "Lieutenant With Combi-Weapon",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 95
+        }
+      ]
+    },
+    {
+      "id": "outrider-squad",
+      "name": "Outrider Squad",
+      "options": [
+        {
+          "id": "3-models",
+          "label": "3 models",
+          "points": 70
+        },
+        {
+          "id": "6-models",
+          "label": "6 models",
+          "points": 140
+        },
+        {
+          "id": "1-invader-atv",
+          "label": "+ 1 Invader ATV",
+          "points": 60
+        }
+      ]
+    },
+    {
+      "id": "predator-annihilator",
+      "name": "Predator Annihilator",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 135
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 145
+        }
+      ]
+    },
+    {
+      "id": "predator-destructor",
+      "name": "Predator Destructor",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 140
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 150
+        }
+      ]
+    },
+    {
+      "id": "razorback",
+      "name": "Razorback",
+      "options": [
+        {
+          "id": "1-model-1st-to-3rd",
+          "label": "1 model · 1st to 3rd",
+          "points": 85
+        },
+        {
+          "id": "1-model-4th",
+          "label": "1 model · 4th+ ",
+          "points": 95
+        }
+      ]
+    },
+    {
+      "id": "redemptor-dreadnought",
+      "name": "Redemptor Dreadnought",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 195
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 210
+        },
+        {
+          "id": "per-macro-plasma-incinerator-upgrade-only",
+          "label": "per Macro plasma incinerator · Upgrade only",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "reiver-squad",
+      "name": "Reiver Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 75
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 150
+        }
+      ]
+    },
+    {
+      "id": "repulsor",
+      "name": "Repulsor",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 170
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 190
+        }
+      ]
+    },
+    {
+      "id": "repulsor-executioner",
+      "name": "Repulsor Executioner",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 255
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 275
+        },
+        {
+          "id": "per-heavy-laser-destroyer-upgrade-only",
+          "label": "per Heavy laser destroyer · Upgrade only",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "rhino",
+      "name": "Rhino",
+      "options": [
+        {
+          "id": "1-model-1st-to-3rd",
+          "label": "1 model · 1st to 3rd",
+          "points": 65
+        },
+        {
+          "id": "1-model-4th",
+          "label": "1 model · 4th+ ",
+          "points": 75
+        }
+      ]
+    },
+    {
+      "id": "scout-squad",
+      "name": "Scout Squad",
+      "options": [
+        {
+          "id": "5-models-1st-to-2nd",
+          "label": "5 models · 1st to 2nd",
+          "points": 65
+        },
+        {
+          "id": "10-models-1st-to-2nd",
+          "label": "10 models · 1st to 2nd",
+          "points": 120
+        },
+        {
+          "id": "5-models-3rd",
+          "label": "5 models · 3rd+ ",
+          "points": 75
+        },
+        {
+          "id": "10-models-3rd",
+          "label": "10 models · 3rd+ ",
+          "points": 130
+        }
+      ]
+    },
+    {
+      "id": "sternguard-veteran-squad",
+      "name": "Sternguard Veteran Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 100
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 200
+        }
+      ]
+    },
+    {
+      "id": "stormhawk-interceptor",
+      "name": "Stormhawk Interceptor",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 155
+        }
+      ]
+    },
+    {
+      "id": "stormraven-gunship",
+      "name": "Stormraven Gunship",
+      "options": [
+        {
+          "id": "1-model-1st",
+          "label": "1 model · 1st",
+          "points": 280
+        },
+        {
+          "id": "1-model-2nd",
+          "label": "1 model · 2nd+ ",
+          "points": 300
+        }
+      ]
+    },
+    {
+      "id": "storm-speeder-hailstrike",
+      "name": "Storm Speeder Hailstrike",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 105
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 115
+        }
+      ]
+    },
+    {
+      "id": "storm-speeder-hammerstrike",
+      "name": "Storm Speeder Hammerstrike",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 140
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 150
+        }
+      ]
+    },
+    {
+      "id": "storm-speeder-thunderstrike",
+      "name": "Storm Speeder Thunderstrike",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 135
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 145
+        }
+      ]
+    },
+    {
+      "id": "stormtalon-gunship",
+      "name": "Stormtalon Gunship",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 165
+        }
+      ]
+    },
+    {
+      "id": "suppressor-squad",
+      "name": "Suppressor Squad",
+      "options": [
+        {
+          "id": "3-models",
+          "label": "3 models",
+          "points": 85
+        }
+      ]
+    },
+    {
+      "id": "tactical-squad",
+      "name": "Tactical Squad",
+      "options": [
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 140
+        }
+      ]
+    },
+    {
+      "id": "techmarine",
+      "name": "Techmarine",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 55
+        }
+      ]
+    },
+    {
+      "id": "terminator-assault-squad",
+      "name": "Terminator Assault Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 155
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 310
+        },
+        {
+          "id": "per-thunder-hammer-upgrade-only",
+          "label": "per Thunder Hammer · Upgrade only",
+          "points": 5
+        }
+      ]
+    },
+    {
+      "id": "terminator-squad",
+      "name": "Terminator Squad",
+      "options": [
+        {
+          "id": "5-models",
+          "label": "5 models",
+          "points": 160
+        },
+        {
+          "id": "10-models",
+          "label": "10 models",
+          "points": 320
+        }
+      ]
+    },
+    {
+      "id": "thunderhawk-gunship",
+      "name": "Thunderhawk Gunship",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 840
+        }
+      ]
+    },
+    {
+      "id": "vanguard-veteran-squad-with-jump-packs",
+      "name": "Vanguard Veteran Squad With Jump Packs",
+      "options": [
+        {
+          "id": "5-models-1st-to-2nd",
+          "label": "5 models · 1st to 2nd",
+          "points": 105
+        },
+        {
+          "id": "10-models-1st-to-2nd",
+          "label": "10 models · 1st to 2nd",
+          "points": 210
+        },
+        {
+          "id": "5-models-3rd",
+          "label": "5 models · 3rd+ ",
+          "points": 115
+        },
+        {
+          "id": "10-models-3rd",
+          "label": "10 models · 3rd+ ",
+          "points": 220
+        }
+      ]
+    },
+    {
+      "id": "vindicator",
+      "name": "Vindicator",
+      "options": [
+        {
+          "id": "1-model-1st-to-2nd",
+          "label": "1 model · 1st to 2nd",
+          "points": 185
+        },
+        {
+          "id": "1-model-3rd",
+          "label": "1 model · 3rd+ ",
+          "points": 200
+        }
+      ]
+    },
+    {
+      "id": "whirlwind",
+      "name": "Whirlwind",
+      "options": [
+        {
+          "id": "1-model-1st",
+          "label": "1 model · 1st",
+          "points": 175
+        },
+        {
+          "id": "1-model-2nd",
+          "label": "1 model · 2nd+ ",
+          "points": 195
+        }
+      ]
+    },
+    {
+      "id": "darnath-lysander",
+      "name": "Darnath Lysander",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 100
+        }
+      ]
+    },
+    {
+      "id": "pedro-kantor",
+      "name": "Pedro Kantor",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 80
+        }
+      ]
+    },
+    {
+      "id": "tor-garadon",
+      "name": "Tor Garadon",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 80
+        }
+      ]
+    },
+    {
+      "id": "caanok-var",
+      "name": "Caanok Var",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 90
+        }
+      ]
+    },
+    {
+      "id": "iron-father-feirros",
+      "name": "Iron Father Feirros",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 85
+        }
+      ]
+    },
+    {
+      "id": "adrax-agatone",
+      "name": "Adrax Agatone",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 80
+        }
+      ]
+    },
+    {
+      "id": "vulkan-hestan",
+      "name": "Vulkan He’Stan",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 95
+        }
+      ]
+    },
+    {
+      "id": "aethon-shaan",
+      "name": "Aethon Shaan",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 100
+        }
+      ]
+    },
+    {
+      "id": "kayvaan-shrike",
+      "name": "Kayvaan Shrike",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 100
+        }
+      ]
+    },
+    {
+      "id": "captain-titus",
+      "name": "Captain Titus",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 100
+        }
+      ]
+    },
+    {
+      "id": "cato-sicarius",
+      "name": "Cato Sicarius",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 105
+        }
+      ]
+    },
+    {
+      "id": "chief-librarian-tigurius",
+      "name": "Chief Librarian Tigurius",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 85
+        }
+      ]
+    },
+    {
+      "id": "marneus-calgar-in-armour-of-antilochus",
+      "name": "Marneus Calgar In Armour Of Antilochus",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 155
+        }
+      ]
+    },
+    {
+      "id": "roboute-guilliman",
+      "name": "Roboute Guilliman",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 355
+        }
+      ]
+    },
+    {
+      "id": "uriel-ventris",
+      "name": "Uriel Ventris",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 105
+        }
+      ]
+    },
+    {
+      "id": "victrix-honour-guard",
+      "name": "Victrix Honour Guard",
+      "options": [
+        {
+          "id": "3-models-1st",
+          "label": "3 models · 1st",
+          "points": 110
+        },
+        {
+          "id": "6-models-1st",
+          "label": "6 models · 1st",
+          "points": 230
+        },
+        {
+          "id": "3-models-2nd",
+          "label": "3 models · 2nd+ ",
+          "points": 130
+        },
+        {
+          "id": "6-models-2nd",
+          "label": "6 models · 2nd+ ",
+          "points": 250
+        },
+        {
+          "id": "per-banner-of-macragge-upgrade-only",
+          "label": "per Banner of Macragge · Upgrade only",
+          "points": 15
+        },
+        {
+          "id": "per-blades-of-honour-upgrade-only",
+          "label": "per Blades of honour · Upgrade only",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "wardens-of-ultramar",
+      "name": "Wardens Of Ultramar",
+      "options": [
+        {
+          "id": "6-models",
+          "label": "6 models",
+          "points": 120
+        }
+      ]
+    },
+    {
+      "id": "korsarro-khan",
+      "name": "Kor’Sarro Khan",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 55
+        }
+      ]
+    },
+    {
+      "id": "suboden-khan",
+      "name": "Suboden Khan",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 90
+        }
+      ]
+    }
+  ]
+}
