@@ -26,7 +26,7 @@ test('corrupt saves reset; valid entries survive while malformed rows are discar
   assert.equal(calculateTotalPoints(army.entries, munitorum), 0);
 });
 test('dataset has unique identifiers and source-backed nonnegative options', () => {
-  assert.equal(munitorum.units.length, 83);
+  assert.equal(munitorum.units.length, 101);
   assert.equal(new Set(munitorum.units.map(unit => unit.id)).size, munitorum.units.length);
   for (const unit of munitorum.units) {
     assert.ok(unit.options.length);

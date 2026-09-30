@@ -8,7 +8,7 @@
   "retrieved": "2026-09-30",
   "dateVerified": true,
   "sourceVersion": "v1.5",
-  "completeness": "All units displayed on the Blood Angels MFM page: 14 Blood Angels-specific units/characters plus the full shared Space Marines unit list available to a Blood Angels detachment. Legends, detachments and enhancements excluded. Paid wargear and optional additional models are attached upgrades with manually selected quantities.",
+  "completeness": "All units from the Blood Angels MFM page (14 Blood Angels-specific units/characters plus the full shared Space Marines unit list) merged with the chapter-specific named characters from the generic Space Marines MFM page (Imperial Fists, Iron Hands, Salamanders, Raven Guard, Ultramarines, White Scars) that do not appear on the Blood Angels page. Legends, detachments and enhancements excluded. Paid wargear and optional additional models are attached upgrades with manually selected quantities.",
   "units": [
     {
       "id": "astorath",
@@ -1371,12 +1371,234 @@
           "points": 250
         }
       ]
+    },
+    {
+      "id": "darnath-lysander",
+      "name": "Darnath Lysander",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 160
+        }
+      ]
+    },
+    {
+      "id": "tor-garadon",
+      "name": "Tor Garadon",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 90
+        }
+      ]
+    },
+    {
+      "id": "caanok-var",
+      "name": "Caanok Var",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 100
+        }
+      ]
+    },
+    {
+      "id": "iron-father-feirros",
+      "name": "Iron Father Feirros",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 85
+        }
+      ]
+    },
+    {
+      "id": "adrax-agatone",
+      "name": "Adrax Agatone",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 90
+        }
+      ]
+    },
+    {
+      "id": "vulkan-he-stan",
+      "name": "Vulkan He'stan",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 105
+        }
+      ]
+    },
+    {
+      "id": "aethon-shaan",
+      "name": "Aethon Shaan",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 105
+        }
+      ]
+    },
+    {
+      "id": "kayvaan-shrike",
+      "name": "Kayvaan Shrike",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 95
+        }
+      ]
+    },
+    {
+      "id": "captain-titus",
+      "name": "Captain Titus",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 115
+        }
+      ]
+    },
+    {
+      "id": "cato-sicarius",
+      "name": "Cato Sicarius",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 115
+        }
+      ]
+    },
+    {
+      "id": "chief-librarian-tigurius",
+      "name": "Chief Librarian Tigurius",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 115
+        }
+      ]
+    },
+    {
+      "id": "kaius-konorius",
+      "name": "Kaius Konorius",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 100
+        }
+      ]
+    },
+    {
+      "id": "marneus-calgar",
+      "name": "Marneus Calgar",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 180
+        }
+      ]
+    },
+    {
+      "id": "roboute-guilliman",
+      "name": "Roboute Guilliman",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 415
+        }
+      ]
+    },
+    {
+      "id": "victrix-honour-guard",
+      "name": "Victrix Honour Guard",
+      "options": [
+        {
+          "id": "3-models-1st-to-2nd",
+          "label": "3 models · 1st to 2nd",
+          "points": 120
+        },
+        {
+          "id": "6-models-1st-to-2nd",
+          "label": "6 models · 1st to 2nd",
+          "points": 250
+        },
+        {
+          "id": "3-models-3rd",
+          "label": "3 models · 3rd+",
+          "points": 150
+        },
+        {
+          "id": "6-models-3rd",
+          "label": "6 models · 3rd+",
+          "points": 280
+        }
+      ],
+      "upgrades": [
+        {
+          "id": "banner-of-macragge",
+          "label": "Banner of Macragge",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "wardens-of-ultramar",
+      "name": "Wardens Of Ultramar",
+      "options": [
+        {
+          "id": "6-models",
+          "label": "6 models",
+          "points": 115
+        }
+      ]
+    },
+    {
+      "id": "kor-sarro-khan",
+      "name": "Kor'sarro Khan",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 80
+        }
+      ]
+    },
+    {
+      "id": "suboden-khan",
+      "name": "Suboden Khan",
+      "options": [
+        {
+          "id": "1-model",
+          "label": "1 model",
+          "points": 105
+        }
+      ]
     }
   ],
   "notes": [
-    "Retrieved from the official Blood Angels page of the Munitorum Field Manual tool (v1.5), which supersedes the prior user-supplied interim points.",
+    "Retrieved from the official Blood Angels and Space Marines pages of the Munitorum Field Manual tool (both v1.5); the generic page supersedes the prior user-supplied interim points.",
+    "The 69 units shared between the Blood Angels and generic Space Marines pages were verified point-for-point identical before merging; only the Blood Angels page's copy is kept.",
+    "Chapter-specific named characters (Imperial Fists, Iron Hands, Salamanders, Raven Guard, Ultramarines, White Scars) were pulled in from https://mfm.warhammer-community.com/en/space-marines, since they do not appear on the Blood Angels page.",
     "Units priced with Requisition Threshold tiers (e.g. \"Your 1st to 2nd Units Cost\" vs \"Your 3rd+ Unit Costs\") are represented as separate options per tier, matching the pattern already used for Sanguinary Guard.",
     "Eradicator Squad is now two distinct datasheet variants on this MFM (With Heavy Bolters / With Melta Rifles) rather than a single base entry with a heavy-bolter option.",
-    "Kaius Konorius is not listed on the official MFM and has been dropped from this dataset; he remains available under the interim snapshot."
+    "Kaius Konorius is officially listed under Ultramarines on the generic Space Marines MFM page at 100 pts, matching the prior user-supplied interim value."
   ]
 }
