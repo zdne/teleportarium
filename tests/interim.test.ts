@@ -604,7 +604,7 @@ test('only supplied wargear is available and is charged per item', () => {
 test('official tier IDs resolve to flat interim prices without guessing target tiers', () => {
   const entry = { instanceId: 'a', unitId: 'aggressor-squad', optionId: '3-models-3rd', bucket: 'shooting' as const };
   assert.equal(calculateEntryPoints(entry, interim), 90);
-  assert.equal(resolveEntry({ ...entry, optionId: '3-models' }, munitorum).option, undefined);
+  assert.equal(resolveEntry({ unitId: 'eradicator-squad-with-melta-rifles', optionId: '3-models', bucket: 'shooting' as const, instanceId: 'a' }, munitorum).option, undefined);
   const loaded = decodeArmy(JSON.stringify({ munitorumId: interim.id, entries: [entry] }), munitorum.id);
   assert.equal(loaded.munitorumId, interim.id);
   assert.equal(calculateEntryPoints(loaded.entries[0], interim), 90);

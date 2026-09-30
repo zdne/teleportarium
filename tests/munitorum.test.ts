@@ -9,16 +9,16 @@ test('switching source reprices the same entries and restores the saved MFM', ()
   // Synthetic test fixture only; never shipped as a points source.
   const alternative = structuredClone(munitorum);
   alternative.id = 'test-alternative';
-  const unit = alternative.units.find(unit => unit.id === 'victrix-honour-guard')!;
-  unit.options.find(option => option.id === '3-models-1st')!.points = 120;
-  unit.upgrades!.find(upgrade => upgrade.id === 'per-banner-of-macragge-upgrade-only')!.points = 20;
+  const unit = alternative.units.find(unit => unit.id === 'terminator-squad')!;
+  unit.options.find(option => option.id === '5-models-1st-to-2nd')!.points = 210;
+  unit.upgrades!.find(upgrade => upgrade.id === 'cyclone-missile-launcher')!.points = 20;
   munitorums.push(alternative);
   try {
-    const original: ArmyList = { targetPoints: 2000, munitorumId: munitorum.id, entries: [{ instanceId: 'guard', unitId: unit.id, optionId: '3-models-1st', bucket: 'melee', upgrades: [{ upgradeId: 'per-banner-of-macragge-upgrade-only', quantity: 1 }] }] };
+    const original: ArmyList = { targetPoints: 2000, munitorumId: munitorum.id, entries: [{ instanceId: 'guard', unitId: unit.id, optionId: '5-models-1st-to-2nd', bucket: 'melee', upgrades: [{ upgradeId: 'cyclone-missile-launcher', quantity: 1 }] }] };
     const switched = { ...original, munitorumId: alternative.id };
-    assert.equal(calculateTotalPoints(original.entries, munitorum), 125);
-    assert.equal(calculateTotalPoints(switched.entries, alternative), 140);
-    assert.equal(calculateBucketPoints(switched.entries, 'melee', alternative), 140);
+    assert.equal(calculateTotalPoints(original.entries, munitorum), 205);
+    assert.equal(calculateTotalPoints(switched.entries, alternative), 230);
+    assert.equal(calculateBucketPoints(switched.entries, 'melee', alternative), 230);
     assert.notEqual(armyFingerprint(original), armyFingerprint(switched));
     assert.equal(decodeArmy(JSON.stringify(switched), munitorum.id).munitorumId, alternative.id);
     const restored = decodeSavedLists(JSON.stringify({ selectedId: 'a', lists: [{ id: 'a', name: 'Alternative force', army: switched }] }), munitorum.id);
