@@ -18,6 +18,7 @@ p, h1, h2, h3 { margin: 0; }
 h1 { font: 56px/1.2 var(--font-display); text-transform: uppercase; letter-spacing: 1px; margin-top: 8px; }
 .title-dot { color: var(--accent); }
 .subtitle { color: var(--text-muted); font-size: 12px; margin-top: 7px; }
+.edition-group { display: flex; gap: 28px; }
 .edition { font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px; }
 .edition label { display: block; font-size: 10px; color: var(--text-muted); margin-bottom: 8px; }
 .edition select { max-width: 100%; padding: 8px 12px; color: var(--text); background: var(--surface); border: 1px solid var(--border); font-size: 12px; }
@@ -53,6 +54,7 @@ h1 { font: 56px/1.2 var(--font-display); text-transform: uppercase; letter-spaci
 .bucket-header { padding: 4px; display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
 h2 { font: 24px/1.2 var(--font-display); text-transform: uppercase; letter-spacing: 1px; }
 .bucket-header h2 { font-size: 36px; line-height: 40px; letter-spacing: 0; }
+.bucket-dp { font-size: 10px; text-transform: uppercase; letter-spacing: .5px; color: var(--text-muted); margin-top: 4px; }
 .bucket-subtotal { display: flex; align-items: baseline; gap: 7px; }
 .bucket-subtotal strong { font-size: 27px; line-height: 1; font-variant-numeric: tabular-nums; }
 .bucket-subtotal span { color: var(--text-muted); font-size: 9px; text-transform: uppercase; }
@@ -67,7 +69,7 @@ h2 { font: 24px/1.2 var(--font-display); text-transform: uppercase; letter-spaci
 .duplicate-button { display: grid; place-items: center; flex-shrink: 0; width: 28px; height: 32px; padding: 0; border: 0; background: transparent; color: var(--text-muted); }
 .duplicate-button:hover { color: var(--text); background: var(--surface-raised); }
 .unit-cost-line { display: flex; align-items: baseline; gap: 8px; padding: 2px 4px; font-size: 14px; line-height: 20px; }
-.unit-cost-line .unavailable { color: var(--danger); }
+.unit-cost-line .unavailable, .upgrade-name.unavailable { color: var(--danger); }
 .unit-leader { flex: 1; min-width: 12px; border-bottom: 1px dotted var(--text-muted); }
 .unit-points { font-size: 14px; font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
 .unit-upgrades { margin: 0 8px 4px 32px; }
@@ -130,6 +132,7 @@ h2 { font: 24px/1.2 var(--font-display); text-transform: uppercase; letter-spaci
   .app-shell { padding: 20px 16px; }
   .identity-secondary { display: none; }
   .title-block { align-items: flex-start; flex-direction: column; gap: 16px; padding: 24px 0; }
+  .edition-group { flex-wrap: wrap; gap: 16px 28px; width: 100%; }
   h1 { font-size: clamp(30px, 9.5vw, 44px); }
   .edition small { display: none; }
   .points-summary { grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 16px 16px 22px; gap: 18px 0; }

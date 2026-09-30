@@ -33,6 +33,14 @@ test('dataset has unique identifiers and source-backed nonnegative options', () 
     assert.equal(new Set(unit.options.map(option => option.id)).size, unit.options.length);
     for (const option of [...unit.options, ...(unit.upgrades ?? [])]) assert.ok(Number.isInteger(option.points) && option.points >= 0);
   }
+  assert.equal(munitorum.detachments?.length, 25);
+  assert.equal(new Set(munitorum.detachments!.map(detachment => detachment.id)).size, munitorum.detachments!.length);
+  for (const detachment of munitorum.detachments!) {
+    assert.ok(Number.isInteger(detachment.dp) && detachment.dp > 0);
+    assert.ok(detachment.enhancements.length);
+    assert.equal(new Set(detachment.enhancements.map(enhancement => enhancement.id)).size, detachment.enhancements.length);
+    for (const enhancement of detachment.enhancements) assert.ok(Number.isInteger(enhancement.points) && enhancement.points >= 0);
+  }
 });
 test('attached upgrade quantities contribute to unit, bucket and army totals', () => {
   const entry: ArmyEntry = { instanceId: 'guard', unitId: 'terminator-squad', optionId: '5-models-1st-to-2nd', bucket: 'melee', upgrades: [

@@ -13,10 +13,19 @@ export function resolveEntry(entry: ArmyEntry, data: Munitorum) {
   }
   return { unit, option };
 }
+export function resolveEnhancement(entry: ArmyEntry, data: Munitorum) {
+  const detachment = data.detachments?.find(detachment => detachment.id === entry.unitId);
+  const enhancement = detachment?.enhancements.find(enhancement => enhancement.id === entry.optionId);
+  return { detachment, enhancement };
+}
 export function calculateTotalPoints(entries: ArmyEntry[], data: Munitorum) {
   return entries.reduce((sum, entry) => sum + calculateEntryPoints(entry, data), 0);
 }
 export function calculateEntryPoints(entry: ArmyEntry, data: Munitorum) {
+  if (entry.bucket === 'enhancements') {
+    const { enhancement } = resolveEnhancement(entry, data);
+    return enhancement ? enhancement.points * (entry.quantity ?? 1) : 0;
+  }
   const { unit, option } = resolveEntry(entry, data);
   if (!option) return 0;
   return option.points + (entry.upgrades ?? []).reduce((sum, selected) =>

@@ -8,7 +8,7 @@
   "retrieved": "2026-09-30",
   "dateVerified": true,
   "sourceVersion": "v1.5",
-  "completeness": "All units from the Blood Angels MFM page (14 Blood Angels-specific units/characters plus the full shared Space Marines unit list) merged with the chapter-specific named characters from the generic Space Marines MFM page (Imperial Fists, Iron Hands, Salamanders, Raven Guard, Ultramarines, White Scars) that do not appear on the Blood Angels page. Legends, detachments and enhancements excluded. Paid wargear and optional additional models are attached upgrades with manually selected quantities.",
+  "completeness": "All units from the Blood Angels MFM page (14 Blood Angels-specific units/characters plus the full shared Space Marines unit list) merged with the chapter-specific named characters from the generic Space Marines MFM page (Imperial Fists, Iron Hands, Salamanders, Raven Guard, Ultramarines, White Scars) that do not appear on the Blood Angels page, plus all 25 detachments and their enhancements from both pages (Detachment Points and enhancement points as listed). Legends and stratagems excluded. Paid wargear and optional additional models are attached upgrades with manually selected quantities.",
   "units": [
     {
       "id": "astorath",
@@ -1593,12 +1593,515 @@
       ]
     }
   ],
+  "detachments": [
+    {
+      "id": "angelic-inheritors",
+      "name": "Angelic Inheritors",
+      "dp": 3,
+      "enhancements": [
+        {
+          "id": "blazing-icon",
+          "label": "Blazing Icon",
+          "points": 20
+        },
+        {
+          "id": "ordained-sacrifice",
+          "label": "Ordained Sacrifice",
+          "points": 25
+        },
+        {
+          "id": "prescient-flash",
+          "label": "Prescient Flash",
+          "points": 25
+        },
+        {
+          "id": "unto-death",
+          "label": "Unto Death",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "assault-brethren",
+      "name": "Assault Brethren",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "furious-assault-upgrade",
+          "label": "Furious Assault (Upgrade)",
+          "points": 10
+        },
+        {
+          "id": "imperiums-sword",
+          "label": "Imperium's Sword",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "id": "blade-of-ultramar",
+      "name": "Blade Of Ultramar",
+      "dp": 3,
+      "enhancements": [
+        {
+          "id": "armour-of-antoninus",
+          "label": "Armour of Antoninus",
+          "points": 15
+        },
+        {
+          "id": "oath-of-macragge",
+          "label": "Oath of Macragge",
+          "points": 20
+        },
+        {
+          "id": "student-of-the-codex",
+          "label": "Student of the Codex",
+          "points": 20
+        },
+        {
+          "id": "veteran-of-behemoth",
+          "label": "Veteran of Behemoth",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "id": "ceramite-sentinels",
+      "name": "Ceramite Sentinels",
+      "dp": 2,
+      "enhancements": [
+        {
+          "id": "castellum-omnivox",
+          "label": "Castellum Omnivox",
+          "points": 10
+        },
+        {
+          "id": "defensive-mastery",
+          "label": "Defensive Mastery",
+          "points": 10
+        },
+        {
+          "id": "honour-indefatigable",
+          "label": "Honour Indefatigable",
+          "points": 10
+        },
+        {
+          "id": "spy-skull-data-link",
+          "label": "Spy-skull Data Link",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "deathwatch-support",
+      "name": "Deathwatch Support",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "beacon-angelis",
+          "label": "Beacon Angelis",
+          "points": 25
+        }
+      ]
+    },
+    {
+      "id": "devastator-brethren",
+      "name": "Devastator Brethren",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "honour-of-vigilance",
+          "label": "Honour of Vigilance",
+          "points": 20
+        },
+        {
+          "id": "master-forged-firearms",
+          "label": "Master-forged Firearms",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "encarmine-speartip",
+      "name": "Encarmine Speartip",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "angelic-executioner",
+          "label": "Angelic Executioner",
+          "points": 20
+        },
+        {
+          "id": "shadow-of-abomination",
+          "label": "Shadow of Abomination",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "forgefathers-seekers",
+      "name": "Forgefather's Seekers",
+      "dp": 2,
+      "enhancements": [
+        {
+          "id": "adamantine-mantle",
+          "label": "Adamantine Mantle",
+          "points": 20
+        },
+        {
+          "id": "forged-in-battle",
+          "label": "Forged in Battle",
+          "points": 25
+        },
+        {
+          "id": "immolator",
+          "label": "Immolator",
+          "points": 20
+        },
+        {
+          "id": "war-tempered-artifice",
+          "label": "War-tempered Artifice",
+          "points": 25
+        }
+      ]
+    },
+    {
+      "id": "gauntlet-task-force",
+      "name": "Gauntlet Task Force",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "damocles-class-uplink",
+          "label": "Damocles-class Uplink",
+          "points": 15
+        },
+        {
+          "id": "linebreaker-onslaught",
+          "label": "Linebreaker Onslaught",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "id": "gladius-task-force",
+      "name": "Gladius Task Force",
+      "dp": 3,
+      "enhancements": [
+        {
+          "id": "adept-of-the-codex",
+          "label": "Adept of the Codex",
+          "points": 20
+        },
+        {
+          "id": "artificer-armour",
+          "label": "Artificer Armour",
+          "points": 15
+        },
+        {
+          "id": "laurels-of-triumph",
+          "label": "Laurels of Triumph",
+          "points": 20
+        },
+        {
+          "id": "standard-of-the-emperor-ascendant",
+          "label": "Standard of the Emperor Ascendant",
+          "points": 25
+        }
+      ]
+    },
+    {
+      "id": "gravis-linebreaker-force",
+      "name": "Gravis Linebreaker Force",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "indefatigable-fortitude",
+          "label": "Indefatigable Fortitude",
+          "points": 20
+        },
+        {
+          "id": "relentless-advance",
+          "label": "Relentless Advance",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "id": "gravis-siege-force",
+      "name": "Gravis Siege Force",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "immovable-conquerors-upgrade",
+          "label": "Immovable Conquerors (Upgrade)",
+          "points": 15
+        },
+        {
+          "id": "narthecis-gauntlet",
+          "label": "Narthecis Gauntlet",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "id": "ironclad-champions",
+      "name": "Ironclad Champions",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "artificer-sarcophagus-upgrade",
+          "label": "Artificer Sarcophagus (Upgrade)",
+          "points": 40
+        },
+        {
+          "id": "venerable-champion-aura-upgrade",
+          "label": "Venerable Champion (Aura) (Upgrade)",
+          "points": 30
+        }
+      ]
+    },
+    {
+      "id": "ironstorm-spearhead",
+      "name": "Ironstorm Spearhead",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "gunnery-honours-upgrade",
+          "label": "Gunnery Honours (Upgrade)",
+          "points": 15
+        },
+        {
+          "id": "redoubtable-machine-spirit-upgrade",
+          "label": "Redoubtable Machine Spirit (Upgrade)",
+          "points": 25
+        }
+      ]
+    },
+    {
+      "id": "medusas-wrath",
+      "name": "Medusa's Wrath",
+      "dp": 2,
+      "enhancements": [
+        {
+          "id": "adept-of-the-omnissiah",
+          "label": "Adept of the Omnissiah",
+          "points": 25
+        },
+        {
+          "id": "master-of-the-machine-war",
+          "label": "Master of the Machine War",
+          "points": 25
+        },
+        {
+          "id": "target-augury-web",
+          "label": "Target Augury Web",
+          "points": 30
+        },
+        {
+          "id": "the-flesh-is-weak",
+          "label": "The Flesh is Weak",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "phobos-shadow-force",
+      "name": "Phobos Shadow Force",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "execute-and-redeploy",
+          "label": "Execute and Redeploy",
+          "points": 25
+        },
+        {
+          "id": "venator-omni-auspex",
+          "label": "Venator Omni-auspex",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "phobos-shock-force",
+      "name": "Phobos Shock Force",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "seal-of-shrouding",
+          "label": "Seal of Shrouding",
+          "points": 15
+        },
+        {
+          "id": "venator-omni-auspex",
+          "label": "Venator Omni-auspex",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "shadowmark-talon",
+      "name": "Shadowmark Talon",
+      "dp": 2,
+      "enhancements": [
+        {
+          "id": "blackwing-shroud",
+          "label": "Blackwing Shroud",
+          "points": 25
+        },
+        {
+          "id": "coronal-susurrant",
+          "label": "Coronal Susurrant",
+          "points": 30
+        },
+        {
+          "id": "hunters-instincts",
+          "label": "Hunter's Instincts",
+          "points": 25
+        },
+        {
+          "id": "umbral-raptor",
+          "label": "Umbral Raptor",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "spearpoint-task-force",
+      "name": "Spearpoint Task Force",
+      "dp": 2,
+      "enhancements": [
+        {
+          "id": "chogorian-huntmaster-upgrade",
+          "label": "Chogorian Huntmaster (Upgrade)",
+          "points": 20
+        },
+        {
+          "id": "hunters-eye",
+          "label": "Hunter's Eye",
+          "points": 25
+        },
+        {
+          "id": "spearpoint-paragon",
+          "label": "Spearpoint Paragon",
+          "points": 25
+        },
+        {
+          "id": "stormseers-wisdom",
+          "label": "Stormseers' Wisdom",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "stormlance-task-force",
+      "name": "Stormlance Task Force",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "auspex-triangulation-shrines-upgrade",
+          "label": "Auspex Triangulation Shrines (Upgrade)",
+          "points": 10
+        },
+        {
+          "id": "supercharged-engines-upgrade",
+          "label": "Supercharged Engines (Upgrade)",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "tactical-brethren",
+      "name": "Tactical Brethren",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "laurels-of-vigilance",
+          "label": "Laurels of Vigilance",
+          "points": 10
+        },
+        {
+          "id": "tactical-insight",
+          "label": "Tactical Insight",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "tacticus-attack-force",
+      "name": "Tacticus Attack Force",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "martial-paragon",
+          "label": "Martial Paragon",
+          "points": 10
+        },
+        {
+          "id": "spearpoint-war-leader",
+          "label": "Spearpoint War Leader",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "tacticus-firestorm-force",
+      "name": "Tacticus Firestorm Force",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "cyber-familiar",
+          "label": "Cyber-familiar",
+          "points": 15
+        },
+        {
+          "id": "tempered-in-battle-aura",
+          "label": "Tempered in Battle (Aura)",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "terminator-storm-force",
+      "name": "Terminator Storm Force",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "champion-of-the-first-company",
+          "label": "Champion of the First Company",
+          "points": 20
+        },
+        {
+          "id": "corporeum-reliquary",
+          "label": "Corporeum Reliquary",
+          "points": 25
+        }
+      ]
+    },
+    {
+      "id": "wrath-of-the-doomed",
+      "name": "Wrath Of The Doomed",
+      "dp": 1,
+      "enhancements": [
+        {
+          "id": "instinctive-interception",
+          "label": "Instinctive Interception",
+          "points": 10
+        },
+        {
+          "id": "on-the-archtraitors-bridge",
+          "label": "On the Archtraitor's Bridge",
+          "points": 20
+        }
+      ]
+    }
+  ],
   "notes": [
     "Retrieved from the official Blood Angels and Space Marines pages of the Munitorum Field Manual tool (both v1.5); the generic page supersedes the prior user-supplied interim points.",
     "The 69 units shared between the Blood Angels and generic Space Marines pages were verified point-for-point identical before merging; only the Blood Angels page's copy is kept.",
     "Chapter-specific named characters (Imperial Fists, Iron Hands, Salamanders, Raven Guard, Ultramarines, White Scars) were pulled in from https://mfm.warhammer-community.com/en/space-marines, since they do not appear on the Blood Angels page.",
     "Units priced with Requisition Threshold tiers (e.g. \"Your 1st to 2nd Units Cost\" vs \"Your 3rd+ Unit Costs\") are represented as separate options per tier, matching the pattern already used for Sanguinary Guard.",
     "Eradicator Squad is now two distinct datasheet variants on this MFM (With Heavy Bolters / With Melta Rifles) rather than a single base entry with a heavy-bolter option.",
-    "Kaius Konorius is officially listed under Ultramarines on the generic Space Marines MFM page at 100 pts, matching the prior user-supplied interim value."
+    "Kaius Konorius is officially listed under Ultramarines on the generic Space Marines MFM page at 100 pts, matching the prior user-supplied interim value.",
+    "Detachments merged the same way as units: the 16 detachments shared between the Blood Angels and generic Space Marines pages were verified identical (DP cost and enhancement points) before merging; Angelic Inheritors, Encarmine Speartip and Wrath of the Doomed are Blood Angels-only, the remaining 6 (Blade of Ultramar, Ceramite Sentinels, Forgefather's Seekers, Medusa's Wrath, Shadowmark Talon, Spearpoint Task Force) are pulled in from the generic Space Marines page."
   ]
 }

@@ -10,8 +10,13 @@ export function useArmyList() {
     switchMunitorum: (id: string) => {
       if (findMunitorum(id)) setArmy(previous => ({ ...previous, munitorumId: id }));
     },
+    switchDetachment: (id: string) => setArmy(previous => ({ ...previous, detachmentId: id || undefined })),
     add: (unitId: string, optionId: string, bucket: BucketId) => setArmy(previous => ({
       ...previous, entries: [...previous.entries, { instanceId: crypto.randomUUID(), unitId, optionId, bucket }],
+    })),
+    setQuantity: (id: string, quantity: number) => setArmy(previous => ({ ...previous,
+      entries: previous.entries.map(entry => entry.instanceId === id && Number.isSafeInteger(quantity) && quantity > 0
+        ? { ...entry, quantity } : entry),
     })),
     duplicate: (id: string) => setArmy(previous => {
       const index = previous.entries.findIndex(entry => entry.instanceId === id);
