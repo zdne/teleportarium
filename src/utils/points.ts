@@ -1,7 +1,17 @@
 import type { ArmyEntry, BucketId } from '../types/army';
-import type { Munitorum } from '../types/munitorum';
+import type { Munitorum, MunitorumDetachment, MunitorumUnit } from '../types/munitorum';
+export const DETACHMENT_OPTION_ID = 'detachment';
+export function detachmentAsUnit(detachment: MunitorumDetachment): MunitorumUnit {
+  return { id: detachment.id, name: detachment.name, options: [{ id: DETACHMENT_OPTION_ID, label: `${detachment.dp}DP`, points: 0 }], upgrades: detachment.enhancements };
+}
 export function resolveEntry(entry: ArmyEntry, data: Munitorum) {
-  const unit = data.units.find(unit => unit.id === entry.unitId);
+  let unit: MunitorumUnit | undefined;
+  if (entry.bucket === 'enhancements') {
+    const detachment = data.detachments?.find(detachment => detachment.id === entry.unitId);
+    unit = detachment ? detachmentAsUnit(detachment) : undefined;
+  } else {
+    unit = data.units.find(unit => unit.id === entry.unitId);
+  }
   let option = unit?.options.find(option => option.id === entry.optionId) ?? unit?.upgrades?.find(option => option.id === entry.optionId);
   if (!option) option = unit?.options.find(option => option.aliases?.includes(entry.optionId));
   // Flat interim prices can replace an official pricing tier for the same size.
@@ -13,19 +23,10 @@ export function resolveEntry(entry: ArmyEntry, data: Munitorum) {
   }
   return { unit, option };
 }
-export function resolveEnhancement(entry: ArmyEntry, data: Munitorum) {
-  const detachment = data.detachments?.find(detachment => detachment.id === entry.unitId);
-  const enhancement = detachment?.enhancements.find(enhancement => enhancement.id === entry.optionId);
-  return { detachment, enhancement };
-}
 export function calculateTotalPoints(entries: ArmyEntry[], data: Munitorum) {
   return entries.reduce((sum, entry) => sum + calculateEntryPoints(entry, data), 0);
 }
 export function calculateEntryPoints(entry: ArmyEntry, data: Munitorum) {
-  if (entry.bucket === 'enhancements') {
-    const { enhancement } = resolveEnhancement(entry, data);
-    return enhancement ? enhancement.points * (entry.quantity ?? 1) : 0;
-  }
   const { unit, option } = resolveEntry(entry, data);
   if (!option) return 0;
   return option.points + (entry.upgrades ?? []).reduce((sum, selected) =>

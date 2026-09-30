@@ -11,7 +11,6 @@ export function decodeArmy(raw: string | null, munitorumId: string): ArmyList {
     if (!value || !Array.isArray(value.entries) || typeof value.munitorumId !== 'string') return fallback;
     const sourceId = value.munitorumId || munitorumId;
     const source = findMunitorum(sourceId);
-    const detachmentId = typeof value.detachmentId === 'string' && value.detachmentId ? value.detachmentId : undefined;
     const seen = new Set<string>();
     const entries: (ArmyEntry & { upgrades: NonNullable<ArmyEntry['upgrades']> })[] = value.entries.filter((entry: unknown) => {
       if (!entry || typeof entry !== 'object') return false;
@@ -29,7 +28,6 @@ export function decodeArmy(raw: string | null, munitorumId: string): ArmyList {
         }
       }
       return { instanceId: e.instanceId, unitId: e.unitId, optionId: e.optionId, bucket: e.bucket,
-        ...(typeof e.quantity === 'number' && Number.isSafeInteger(e.quantity) && e.quantity > 0 ? { quantity: e.quantity } : {}),
         upgrades: [...upgrades].map(([upgradeId, quantity]) => ({ upgradeId, quantity })) };
     });
     // Only attach old standalone upgrades when the parent is unambiguous.
@@ -45,6 +43,6 @@ export function decodeArmy(raw: string | null, munitorumId: string): ArmyList {
       else parent.upgrades.push({ upgradeId: entry.optionId, quantity: 1 });
       migrated.add(entry.instanceId);
     }
-    return { ...fallback, munitorumId: sourceId, ...(detachmentId ? { detachmentId } : {}), entries: entries.filter(entry => !migrated.has(entry.instanceId)) } as ArmyList;
+    return { ...fallback, munitorumId: sourceId, entries: entries.filter(entry => !migrated.has(entry.instanceId)) } as ArmyList;
   } catch { return fallback; }
 }

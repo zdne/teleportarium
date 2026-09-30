@@ -6,7 +6,7 @@ export const BUCKETS = [
   { id: 'enhancements', name: 'Enhancements & Upgrades', description: 'Detachment enhancements & upgrades' },
 ] as const;
 export type BucketId = typeof BUCKETS[number]['id'];
-export type ArmyEntry = { instanceId: string; unitId: string; optionId: string; bucket: BucketId; quantity?: number; upgrades?: { upgradeId: string; quantity: number }[] };
-export type ArmyList = { targetPoints: number; munitorumId: string; detachmentId?: string; entries: ArmyEntry[] };
+export type ArmyEntry = { instanceId: string; unitId: string; optionId: string; bucket: BucketId; upgrades?: { upgradeId: string; quantity: number }[] };
+export type ArmyList = { targetPoints: number; munitorumId: string; entries: ArmyEntry[] };
 export const DEFAULT_POINTS_LIMIT = 2000;
 export const STORAGE_KEY = 'warhammer-list-builder:v1';
