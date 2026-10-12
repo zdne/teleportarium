@@ -16,7 +16,7 @@ test('switching source reprices the same entries and restores the saved MFM', ()
   try {
     const original: ArmyList = { targetPoints: 2000, munitorumId: munitorum.id, entries: [{ instanceId: 'guard', unitId: unit.id, optionId: '5-models-1st-to-2nd', bucket: 'melee', upgrades: [{ upgradeId: 'cyclone-missile-launcher', quantity: 1 }] }] };
     const switched = { ...original, munitorumId: alternative.id };
-    assert.equal(calculateTotalPoints(original.entries, munitorum), 205);
+    assert.equal(calculateTotalPoints(original.entries, munitorum), 200);
     assert.equal(calculateTotalPoints(switched.entries, alternative), 230);
     assert.equal(calculateBucketPoints(switched.entries, 'melee', alternative), 230);
     assert.notEqual(armyFingerprint(original), armyFingerprint(switched));

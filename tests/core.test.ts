@@ -47,12 +47,12 @@ test('attached upgrade quantities contribute to unit, bucket and army totals', (
     { upgradeId: 'cyclone-missile-launcher', quantity: 2 },
     { upgradeId: 'missing', quantity: 1 },
   ] };
-  assert.equal(calculateEntryPoints(entry, munitorum), 215);
-  assert.equal(calculateBucketPoints([entry], 'melee', munitorum), 215);
-  assert.equal(calculateTotalPoints([entry, { ...entry, instanceId: 'copy' }], munitorum), 430);
+  assert.equal(calculateEntryPoints(entry, munitorum), 210);
+  assert.equal(calculateBucketPoints([entry], 'melee', munitorum), 210);
+  assert.equal(calculateTotalPoints([entry, { ...entry, instanceId: 'copy' }], munitorum), 420);
   const restored = decodeArmy(JSON.stringify({ munitorumId: munitorum.id, entries: [entry] }), munitorum.id);
   assert.deepEqual(restored.entries[0].upgrades, entry.upgrades);
-  assert.equal(calculateTotalPoints(restored.entries, munitorum), 215);
+  assert.equal(calculateTotalPoints(restored.entries, munitorum), 210);
 });
 test('old standalone upgrades migrate only when the matching parent is unambiguous', () => {
   const parent = { instanceId: 'guard', unitId: 'terminator-squad', optionId: '5-models-1st-to-2nd', bucket: 'melee' };
@@ -60,11 +60,11 @@ test('old standalone upgrades migrate only when the matching parent is unambiguo
   const saved = (entries: unknown[]) => JSON.stringify({ munitorumId: munitorum.id, entries });
   const migrated = decodeArmy(saved([parent, banner]), munitorum.id);
   assert.equal(migrated.entries.length, 1);
-  assert.equal(calculateTotalPoints(migrated.entries, munitorum), 205);
+  assert.equal(calculateTotalPoints(migrated.entries, munitorum), 200);
   assert.deepEqual(migrated.entries[0].upgrades, [{ upgradeId: banner.optionId, quantity: 1 }]);
   const ambiguous = decodeArmy(saved([parent, { ...parent, instanceId: 'second' }, banner]), munitorum.id);
   assert.equal(ambiguous.entries.length, 3);
-  assert.equal(calculateTotalPoints(ambiguous.entries, munitorum), 400);
+  assert.equal(calculateTotalPoints(ambiguous.entries, munitorum), 390);
 });
 test('invalid upgrade quantities are discarded and duplicate upgrade ids normalized', () => {
   const restored = decodeArmy(JSON.stringify({ munitorumId: munitorum.id, entries: [{ instanceId: 'a', unitId: 'captain', optionId: '1-model', bucket: 'characters', upgrades: [null, { upgradeId: 'a', quantity: -1 }, { upgradeId: 'b', quantity: 1.5 }, { upgradeId: 'c', quantity: 1 }, { upgradeId: 'c', quantity: 2 }] }] }), munitorum.id);

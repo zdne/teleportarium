@@ -123,7 +123,15 @@ Missing units/options remain visible but do not contribute points. If an entire
 saved source is unavailable, the app displays a warning rather than silently
 using another edition’s prices.
 
-The September 2026 snapshot and **Interim (unreleased)** source are bundled.
+The default source is **Space Marines Codex — October 2026**, retrieved 2026-10-12
+from the Blood Angels and Space Marines MFM pages. Both pages still say v1.5, but
+42 unit prices changed after the 2026-09-30 retrieval without a version bump. The
+pages give no date, so `updated` is the retrieval date and `dateVerified` is false.
+The previous **Space Marines Codex — September 2026** source stays selectable.
+`scripts/inspect-source.mjs` now also extracts detachments and current prices from
+the changed-price (▲/▼) markup.
+
+The September 2026 snapshots and **Interim (unreleased)** source are also bundled.
 The interim source contains exactly 56 user-supplied units, 72 model-size options,
 and six per-item wargear choices. Names follow the official Space Marines MFM
 where present; the four Blood Angels names were checked against their MFM, and
