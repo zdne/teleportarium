@@ -1,4 +1,4 @@
-import { BUCKETS, DEFAULT_POINTS_LIMIT, type ArmyList, type ArmyEntry } from '../types/army';
+import { BUCKETS, DEFAULT_POINTS_LIMIT, LEGACY_BUCKETS, type ArmyList, type ArmyEntry } from '../types/army';
 import { findMunitorum } from '../data/munitorum';
 export function emptyArmy(munitorumId: string): ArmyList {
   return { targetPoints: DEFAULT_POINTS_LIMIT, munitorumId, entries: [] };
@@ -15,6 +15,7 @@ export function decodeArmy(raw: string | null, munitorumId: string): ArmyList {
     const entries: (ArmyEntry & { upgrades: NonNullable<ArmyEntry['upgrades']> })[] = value.entries.filter((entry: unknown) => {
       if (!entry || typeof entry !== 'object') return false;
       const e = entry as Record<string, unknown>;
+      if (typeof e.bucket === 'string' && Object.hasOwn(LEGACY_BUCKETS, e.bucket)) e.bucket = LEGACY_BUCKETS[e.bucket];
       if (typeof e.instanceId !== 'string' || !e.instanceId || seen.has(e.instanceId) ||
           typeof e.unitId !== 'string' || typeof e.optionId !== 'string' ||
           !BUCKETS.some(bucket => bucket.id === e.bucket)) return false;

@@ -14,11 +14,11 @@ test('switching source reprices the same entries and restores the saved MFM', ()
   unit.upgrades!.find(upgrade => upgrade.id === 'cyclone-missile-launcher')!.points = 20;
   munitorums.push(alternative);
   try {
-    const original: ArmyList = { targetPoints: 2000, munitorumId: munitorum.id, entries: [{ instanceId: 'guard', unitId: unit.id, optionId: '5-models-1st-to-2nd', bucket: 'melee', upgrades: [{ upgradeId: 'cyclone-missile-launcher', quantity: 1 }] }] };
+    const original: ArmyList = { targetPoints: 2000, munitorumId: munitorum.id, entries: [{ instanceId: 'guard', unitId: unit.id, optionId: '5-models-1st-to-2nd', bucket: 'hammer', upgrades: [{ upgradeId: 'cyclone-missile-launcher', quantity: 1 }] }] };
     const switched = { ...original, munitorumId: alternative.id };
     assert.equal(calculateTotalPoints(original.entries, munitorum), 200);
     assert.equal(calculateTotalPoints(switched.entries, alternative), 230);
-    assert.equal(calculateBucketPoints(switched.entries, 'melee', alternative), 230);
+    assert.equal(calculateBucketPoints(switched.entries, 'hammer', alternative), 230);
     assert.notEqual(armyFingerprint(original), armyFingerprint(switched));
     assert.equal(decodeArmy(JSON.stringify(switched), munitorum.id).munitorumId, alternative.id);
     const restored = decodeSavedLists(JSON.stringify({ selectedId: 'a', lists: [{ id: 'a', name: 'Alternative force', army: switched }] }), munitorum.id);

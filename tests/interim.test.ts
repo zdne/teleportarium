@@ -580,7 +580,7 @@ test('interim includes exactly the supplied units, sizes and prices', () => {
   assert.match(interim.label, /unreleased/);
 });
 test('Sanguinary Guard tiers remain explicit and old 135-point entries still resolve', () => {
-  const entry = { instanceId: 'sg', unitId: 'sanguinary-guard', optionId: '3-models', bucket: 'melee' as const };
+  const entry = { instanceId: 'sg', unitId: 'sanguinary-guard', optionId: '3-models', bucket: 'hammer' as const };
   assert.equal(calculateEntryPoints(entry, interim), 135);
   for (const [optionId, points] of [['3-models-1st-to-2nd', 135], ['3-models-3rd', 150], ['6-models-1st-to-2nd', 275], ['6-models-3rd', 290]] as const) {
     assert.equal(calculateEntryPoints({ ...entry, optionId }, interim), points);
@@ -599,12 +599,12 @@ test('only supplied wargear is available and is charged per item', () => {
   const actual = interim.units.flatMap(unit => (unit.upgrades ?? []).map(wargear => [unit.id, wargear.label, wargear.points]));
   assert.deepEqual(actual.sort(), expected.sort());
   const unit = interim.units.find(unit => unit.id === 'victrix-honour-guard')!;
-  assert.equal(calculateEntryPoints({ instanceId: 'v', unitId: unit.id, optionId: '3-models', bucket: 'melee', upgrades: [{ upgradeId: unit.upgrades![0].id, quantity: 2 }] }, interim), 150);
+  assert.equal(calculateEntryPoints({ instanceId: 'v', unitId: unit.id, optionId: '3-models', bucket: 'hammer', upgrades: [{ upgradeId: unit.upgrades![0].id, quantity: 2 }] }, interim), 150);
 });
 test('official tier IDs resolve to flat interim prices without guessing target tiers', () => {
-  const entry = { instanceId: 'a', unitId: 'aggressor-squad', optionId: '3-models-3rd', bucket: 'shooting' as const };
+  const entry = { instanceId: 'a', unitId: 'aggressor-squad', optionId: '3-models-3rd', bucket: 'hammer' as const };
   assert.equal(calculateEntryPoints(entry, interim), 90);
-  assert.equal(resolveEntry({ unitId: 'eradicator-squad-with-melta-rifles', optionId: '3-models', bucket: 'shooting' as const, instanceId: 'a' }, munitorum).option, undefined);
+  assert.equal(resolveEntry({ unitId: 'eradicator-squad-with-melta-rifles', optionId: '3-models', bucket: 'hammer' as const, instanceId: 'a' }, munitorum).option, undefined);
   const loaded = decodeArmy(JSON.stringify({ munitorumId: interim.id, entries: [entry] }), munitorum.id);
   assert.equal(loaded.munitorumId, interim.id);
   assert.equal(calculateEntryPoints(loaded.entries[0], interim), 90);

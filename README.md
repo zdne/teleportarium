@@ -1,7 +1,7 @@
 # Teleportarium
 
-A browser-only Space Marines army scratchpad. Assign units to Characters, Shooting,
-Melee and Support, choose their points options, and experiment against a 2,000-point
+A browser-only Space Marines army scratchpad. Assign units to Hammer, Workhorse
+and Utility, choose their points options, and experiment against a 2,000-point
 target. Duplicates and armies over the target are allowed. No army legality rules
 are enforced.
 
@@ -27,7 +27,7 @@ link opens the official page only when clicked.
 
 ## Implementation
 
-- Four tactical buckets with derived subtotals and used/remaining/limit points.
+- Three tactical buckets (plus Enhancements & Upgrades) with derived subtotals and used/remaining/limit points.
 - Searchable, alphabetically sorted unit register with explicit option selection.
 - Duplicate units, removal, and moving entries via the small arrow control.
 - Automatic localStorage persistence and confirmation before clearing.
@@ -35,6 +35,8 @@ link opens the official page only when clicked.
   to create a copy, and Delete to remove a saved list. Lists remain in this browser.
 - Responsive dark reference-manual styling, native modal keyboard handling,
   focus restoration, and reduced-motion support.
+- Entries saved under the old Characters/Shooting/Melee/Support buckets load into
+  Workhorse, Hammer, Hammer and Utility respectively.
 - Invalid saved rows are discarded; stale references remain removable and do not
   contribute to totals. Unavailable storage displays a session-only warning.
 

@@ -5,7 +5,7 @@ import { emptyArmy } from '../src/utils/storage.ts';
 import { munitorum } from '../src/data/munitorum/index.ts';
 import type { ArmyList } from '../src/types/army.ts';
 test('saved list library restores names, selection and attached wargear', () => {
-  const army: ArmyList = { ...emptyArmy(munitorum.id), entries: [{ instanceId: 'guard', unitId: 'victrix-honour-guard', optionId: '3-models-1st', bucket: 'melee', upgrades: [{ upgradeId: 'per-banner-of-macragge-upgrade-only', quantity: 1 }] }] };
+  const army: ArmyList = { ...emptyArmy(munitorum.id), entries: [{ instanceId: 'guard', unitId: 'victrix-honour-guard', optionId: '3-models-1st', bucket: 'hammer', upgrades: [{ upgradeId: 'per-banner-of-macragge-upgrade-only', quantity: 1 }] }] };
   const library = decodeSavedLists(JSON.stringify({ selectedId: 'a', lists: [{ id: 'a', name: 'My force', army }, { id: 'b', name: 'Empty', army: emptyArmy(munitorum.id) }] }), munitorum.id);
   assert.equal(library.selectedId, 'a');
   assert.equal(library.lists.length, 2);
@@ -23,9 +23,9 @@ test('malformed library rows and duplicate IDs are discarded without losing vali
   assert.deepEqual(restored.lists.map(list => list.name), ['Force']);
 });
 test('draft comparison ignores normalized empty wargear and detects moves', () => {
-  const army: ArmyList = { ...emptyArmy(munitorum.id), entries: [{ instanceId: 'a', unitId: 'captain', optionId: '1-model', bucket: 'characters' }] };
+  const army: ArmyList = { ...emptyArmy(munitorum.id), entries: [{ instanceId: 'a', unitId: 'captain', optionId: '1-model', bucket: 'workhorse' }] };
   const loaded = decodeSavedLists(JSON.stringify({ lists: [{ id: 'a', name: 'Force', army }] }), munitorum.id).lists[0].army;
   assert.equal(armyFingerprint(army), armyFingerprint(loaded));
-  loaded.entries[0].bucket = 'support';
+  loaded.entries[0].bucket = 'utility';
   assert.notEqual(armyFingerprint(army), armyFingerprint(loaded));
 });
