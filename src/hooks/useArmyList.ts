@@ -2,6 +2,7 @@ import { STORAGE_KEY, type BucketId, type ArmyList } from '../types/army';
 import { munitorum, findMunitorum } from '../data/munitorum';
 import { decodeArmy, emptyArmy } from '../utils/storage';
 import { useLocalStorage } from './useLocalStorage';
+import { newId } from '../utils/id';
 export function useArmyList() {
   const { value: army, setValue: setArmy, warning } = useLocalStorage(STORAGE_KEY, raw => decodeArmy(raw, munitorum.id));
   return {
@@ -11,13 +12,13 @@ export function useArmyList() {
       if (findMunitorum(id)) setArmy(previous => ({ ...previous, munitorumId: id }));
     },
     add: (unitId: string, optionId: string, bucket: BucketId) => setArmy(previous => ({
-      ...previous, entries: [...previous.entries, { instanceId: crypto.randomUUID(), unitId, optionId, bucket }],
+      ...previous, entries: [...previous.entries, { instanceId: newId(), unitId, optionId, bucket }],
     })),
     duplicate: (id: string) => setArmy(previous => {
       const index = previous.entries.findIndex(entry => entry.instanceId === id);
       if (index < 0) return previous;
       const entries = [...previous.entries];
-      entries.splice(index + 1, 0, { ...entries[index], instanceId: crypto.randomUUID() });
+      entries.splice(index + 1, 0, { ...entries[index], instanceId: newId() });
       return { ...previous, entries };
     }),
     remove: (id: string) => setArmy(previous => ({ ...previous, entries: previous.entries.filter(entry => entry.instanceId !== id) })),

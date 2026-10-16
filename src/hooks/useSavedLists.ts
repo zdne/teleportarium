@@ -4,6 +4,7 @@ import { munitorum } from '../data/munitorum';
 import { armyFingerprint, decodeSavedLists } from '../utils/savedLists';
 import { emptyArmy } from '../utils/storage';
 import { useLocalStorage } from './useLocalStorage';
+import { newId } from '../utils/id';
 export function useSavedLists(army: ArmyList, load: (army: ArmyList) => void) {
   const { value: library, setValue: setLibrary, warning } = useLocalStorage(SAVED_LISTS_KEY, raw => decodeSavedLists(raw, munitorum.id));
   const selected = library.lists.find(list => list.id === library.selectedId);
@@ -11,7 +12,7 @@ export function useSavedLists(army: ArmyList, load: (army: ArmyList) => void) {
   function saveAsNew() {
     const name = window.prompt('Name this list:', selected ? `${selected.name} copy` : `List ${library.lists.length + 1}`)?.trim();
     if (!name) return;
-    const id = crypto.randomUUID();
+    const id = newId();
     setLibrary(previous => ({ selectedId: id, lists: [...previous.lists, { id, name, army: structuredClone(army) }] }));
   }
   return {
